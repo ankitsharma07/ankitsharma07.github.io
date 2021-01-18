@@ -1,48 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="//purl.org/dc/elements/1.1/" xmlns:content="//purl.org/rss/1.0/modules/content/" xmlns:atom="//www.w3.org/2005/Atom" version="2.0" xmlns:media="//search.yahoo.com/mrss/"><channel><title><![CDATA[Ankit Sharma - nezubn]]></title><description><![CDATA[Thought, life and universe.]]></description><link>nezubn.com/</link><image><url>nezubn.com/favicon.png</url><title>Ankit Sharma - nezubn</title><link>nezubn.com/</link></image><generator>Ghost 3.40</generator><lastBuildDate>Mon, 11 Jan 2021 05:33:25 GMT</lastBuildDate><atom:link href="nezubn.com/author/ankit/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Test]]></title><description><![CDATA[<h1 id="table-of-contents">Table of Contents</h1><p>We all spend our lives in Xcode writing codes day in day out. Here is a list of shortcuts that can be useful and save our time:</p><!--kg-card-begin: html--><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col class="org-left">
-<col class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Command</th>
-<th scope="col" class="org-left">What it really does?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">Cmd + Shift + J</td>
-<td class="org-left">Highlight the current file in the sidebar</td>
-</tr>
-<tr>
-<td class="org-left">Cmd + Shift + T</td>
-<td class="org-left">Open new</td></tr></tbody></table>]]></description><link>nezubn.com/test-2/</link><guid isPermaLink="false">5feacb4256c39f44086f9ac6</guid><dc:creator><![CDATA[Ankit Sharma]]></dc:creator><pubDate>Tue, 29 Dec 2020 06:23:21 GMT</pubDate><content:encoded><![CDATA[<h1 id="table-of-contents">Table of Contents</h1><p>We all spend our lives in Xcode writing codes day in day out. Here is a list of shortcuts that can be useful and save our time:</p><!--kg-card-begin: html--><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-<colgroup>
-<col class="org-left">
-<col class="org-left">
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Command</th>
-<th scope="col" class="org-left">What it really does?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">Cmd + Shift + J</td>
-<td class="org-left">Highlight the current file in the sidebar</td>
-</tr>
-<tr>
-<td class="org-left">Cmd + Shift + T</td>
-<td class="org-left">Open new windows quickly</td>
-</tr>
-<tr>
-<td class="org-left">Cmd + Shift + O</td>
-<td class="org-left">Open anything in the current project scope. This one we &lt;3.</td>
-</tr>
-<tr>
-<td class="org-left">&nbsp;</td>
-<td class="org-left">&nbsp;</td>
-</tr>
-</tbody>
-</table><!--kg-card-end: html-->]]></content:encoded></item><item><title><![CDATA[Test]]></title><description><![CDATA[<p>This is a test.</p>]]></description><link>nezubn.com/test/</link><guid isPermaLink="false">5fe2d71f0842c2c935223780</guid><dc:creator><![CDATA[Ankit Sharma]]></dc:creator><pubDate>Wed, 23 Dec 2020 05:35:40 GMT</pubDate><content:encoded><![CDATA[<p>This is a test.</p>]]></content:encoded></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="//purl.org/dc/elements/1.1/" xmlns:content="//purl.org/rss/1.0/modules/content/" xmlns:atom="//www.w3.org/2005/Atom" version="2.0" xmlns:media="//search.yahoo.com/mrss/"><channel><title><![CDATA[Ankit Sharma - nezubn]]></title><description><![CDATA[Thoughts, life and universe.]]></description><link>nezubn.com/</link><image><url>nezubn.com/favicon.png</url><title>Ankit Sharma - nezubn</title><link>nezubn.com/</link></image><generator>Ghost 3.40</generator><lastBuildDate>Mon, 18 Jan 2021 04:45:25 GMT</lastBuildDate><atom:link href="nezubn.com/author/ankit/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[A life's journey of a programmer]]></title><description><![CDATA[<pre><code class="language-python3">def hello():
+	return "Hello, World!"
+    
+hello()</code></pre>]]></description><link>nezubn.com/a-lifes-journey-of-a-programmer/</link><guid isPermaLink="false">6005121456c39f44086f9ae5</guid><dc:creator><![CDATA[Ankit Sharma]]></dc:creator><pubDate>Mon, 18 Jan 2021 04:45:08 GMT</pubDate><content:encoded><![CDATA[<pre><code class="language-python3">def hello():
+	return "Hello, World!"
+    
+hello()</code></pre>]]></content:encoded></item></channel></rss>
