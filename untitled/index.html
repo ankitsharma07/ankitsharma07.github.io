@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>(Untitled)</title>
+    <link rel="stylesheet" href="../assets/built/screen.css?v=b6ee553ed7">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    <script>
+        var siteUrl = 'nezubn.com';
+    </script>
+
+    <script>
+        var localTheme = localStorage.getItem('dawn_theme');
+        switch (localTheme) {
+            case 'dark':
+                document.documentElement.classList.add('theme-dark');
+                break;
+            case 'light':
+                document.documentElement.classList.add('theme-light');
+                break;
+            default:
+                break;
+        }
+    </script>
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="amp/index.html">
+    
+    <meta property="og:site_name" content="nezubn">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="(Untitled)">
+    <meta property="og:description" content="# Table of Contents   1.  [laptop setup and system design for deep learning](#org94aa6ec) 1.  [Software design principles](#org441c7ea) 2.  [Points to ponder](#org592b6d3) 3.  [Pipeline](#orgdc36e10) 4.  [References](#orge0dcd01) 2.  [Project structure of Deep Learning project](#org487f124) 1.  [Project Structure](#orgc9e1d24) 2.  [Object Oriented Programming in python](#org52a11dd) 1.  [Abstraction]">
+    <meta property="og:url" content="nezubn.com/untitled/">
+    <meta property="article:published_time" content="2021-01-20T04:32:06.000Z">
+    <meta property="article:modified_time" content="2021-01-20T04:32:06.000Z">
+    <meta property="article:publisher" content="https://www.facebook.com/nezubn">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="(Untitled)">
+    <meta name="twitter:description" content="# Table of Contents   1.  [laptop setup and system design for deep learning](#org94aa6ec) 1.  [Software design principles](#org441c7ea) 2.  [Points to ponder](#org592b6d3) 3.  [Pipeline](#orgdc36e10) 4.  [References](#orge0dcd01) 2.  [Project structure of Deep Learning project](#org487f124) 1.  [Project Structure](#orgc9e1d24) 2.  [Object Oriented Programming in python](#org52a11dd) 1.  [Abstraction]">
+    <meta name="twitter:url" content="nezubn.com/untitled/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Ankit Sharma">
+    <meta name="twitter:site" content="@nezubn">
+    <meta name="twitter:creator" content="@nezubn">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "nezubn",
+        "url": "nezubn.com/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "nezubn.com/content/images/2021/01/Artboard-Copy-1.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Ankit Sharma",
+        "image": {
+            "@type": "ImageObject",
+            "url": "//www.gravatar.com/avatar/b30d00eb97419ed45996472664491f48?s=250&d=mm&r=x",
+            "width": 250,
+            "height": 250
+        },
+        "url": "nezubn.com/author/ankit/",
+        "sameAs": [
+            "https://twitter.com/nezubn"
+        ]
+    },
+    "headline": "(Untitled)",
+    "url": "nezubn.com/untitled/",
+    "datePublished": "2021-01-20T04:32:06.000Z",
+    "dateModified": "2021-01-20T04:32:06.000Z",
+    "description": "\n\n\n# Table of Contents\n\n\n\n\n1.  [laptop setup and system design for deep learning](#org94aa6ec)\n\n1.  [Software design principles](#org441c7ea)\n\n2.  [Points to ponder](#org592b6d3)\n\n3.  [Pipeline](#orgdc36e10)\n\n4.  [References](#orge0dcd01)\n\n2.  [Project structure of Deep Learning project](#org487f124)\n\n1.  [Project Structure](#orgc9e1d24)\n\n2.  [Object Oriented Programming in python](#org52a11dd)\n\n1.  [Abstraction](#org2372f66)\n\n2.  [Static and class methods](#org56aa7e3)\n\n3.  [Type checking](#org",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "nezubn.com/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 3.40">
+    <link rel="alternate" type="application/rss+xml" title="nezubn" href="../rss/index.rss">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-okaidia.min.css" integrity="sha256-Ykz0nNWK7w4QWJUYR7OraN4773aMB/11aMt1nZyrhuQ=" crossorigin="anonymous">
+
+    <style type="text/css" media="screen">
+        .post-full-content pre strong {
+            color: white;
+        }
+        .post-full-content pre {
+            line-height: 1;
+        }
+        .post-full-content pre code {
+            white-space: pre-wrap;
+            hyphens: auto;
+            line-height: 0.6;
+            font-size: 0.6em;
+        }
+    </style>
+</head>
+
+<body class="post-template">
+    <svg width="0" height="0" style="display: none;">
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="arrow-left">
+        <path d="M26.667 14.667v2.667h-16L18 24.667l-1.893 1.893L5.547 16l10.56-10.56L18 7.333l-7.333 7.333h16z"></path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="arrow-right">
+        <path d="M5.333 14.667v2.667h16L14 24.667l1.893 1.893L26.453 16 15.893 5.44 14 7.333l7.333 7.333h-16z"></path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="brightness-2">
+        <path d="M13.333 2.667c-2.427 0-4.707.667-6.667 1.8 4 2.307 6.667 6.6 6.667 11.533s-2.667 9.227-6.667 11.533c1.96 1.133 4.24 1.8 6.667 1.8 7.36 0 13.333-5.973 13.333-13.333S20.693 2.667 13.333 2.667z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="chevron-left">
+        <path d="M20.547 22.107L14.44 16l6.107-6.12L18.667 8l-8 8 8 8 1.88-1.893z"></path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="chevron-right">
+        <path d="M11.453 22.107L17.56 16l-6.107-6.12L13.333 8l8 8-8 8-1.88-1.893z"></path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="circle-half-full">
+        <path d="M16 2.667c-7.36 0-13.333 5.973-13.333 13.333s5.973 13.333 13.333 13.333c7.36 0 13.333-5.973 13.333-13.333s-5.973-13.333-13.333-13.333zM16 5.333c5.893 0 10.667 4.773 10.667 10.667s-4.773 10.667-10.667 10.667v-21.333z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="dots-horizontal">
+        <path d="M21.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM13.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0zM5.333 16c0-1.473 1.194-2.667 2.667-2.667v0c1.473 0 2.667 1.194 2.667 2.667v0c0 1.473-1.194 2.667-2.667 2.667v0c-1.473 0-2.667-1.194-2.667-2.667v0z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="facebook-box">
+        <path d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM24 6.667h-3.333A4.672 4.672 0 0 0 16 11.334v3.333h-2.667v4H16V28h4v-9.333h4v-4h-4V12c0-.733.6-1.333 1.333-1.333H24v-4z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="facebook">
+        <path d="M22.667 2.667V8H20c-.92 0-1.333 1.08-1.333 2v3.333h4v5.333h-4v10.667h-5.333V18.666h-4v-5.333h4V8a5.332 5.332 0 0 1 5.333-5.333h4z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="linkedin">
+        <path d="M25.333 4c1.473 0 2.667 1.194 2.667 2.667v0 18.667c0 1.473-1.194 2.667-2.667 2.667v0h-18.667c-1.473 0-2.667-1.194-2.667-2.667v0-18.667c0-1.473 1.194-2.667 2.667-2.667v0h18.667zM24.667 24.667v-7.067c0-2.401-1.946-4.347-4.347-4.347v0c-1.133 0-2.453 0.693-3.093 1.733v-1.48h-3.72v11.16h3.72v-6.573c0-1.027 0.827-1.867 1.853-1.867 1.031 0 1.867 0.836 1.867 1.867v0 6.573h3.72zM9.173 11.413c1.237 0 2.24-1.003 2.24-2.24v0c0-1.24-1-2.253-2.24-2.253-1.244 0-2.253 1.009-2.253 2.253v0c0 1.24 1.013 2.24 2.253 2.24zM11.027 24.667v-11.16h-3.693v11.16h3.693z">
+        </path>
+    </symbol>
+    
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 40 40" id="loader">
+        <path opacity="0.3" fill="currentColor" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"></path>
+        <path fill="currentColor" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
+            <animatetransform attributetype="xml" attributename="transform" type="rotate" from="0 20 20" to="360 20 20" dur="0.5s" repeatcount="indefinite"></animatetransform>
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="magnify">
+        <path d="M12.667 4a8.667 8.667 0 0 1 8.667 8.667c0 2.147-.787 4.12-2.08 5.64l.36.36h1.053l6.667 6.667-2 2-6.667-6.667v-1.053l-.36-.36a8.689 8.689 0 0 1-5.64 2.08C7.88 21.334 4 17.454 4 12.667S7.88 4 12.667 4zm0 2.667c-3.333 0-6 2.667-6 6s2.667 6 6 6 6-2.667 6-6-2.667-6-6-6z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="menu-down">
+        <path d="M9.333 13.333L16 20l6.667-6.667H9.334z"></path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="rss-box">
+        <path d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zM10 20c-1.107 0-2 .893-2 2s.893 2 2 2 2-.893 2-2-.893-2-2-2zm-2-6.667V16c4.413 0 8 3.587 8 8h2.667c0-5.893-4.773-10.667-10.667-10.667zM8 8v2.667c7.36 0 13.333 5.973 13.333 13.333H24c0-8.84-7.16-16-16-16z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="star">
+        <path d="M16 23.027L24.24 28l-2.187-9.373 7.28-6.307-9.587-.827-3.747-8.827-3.747 8.827-9.587.827 7.267 6.307L7.759 28l8.24-4.973z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 24 24" id="table-of-contents">
+        <path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"></path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="twitter-box">
+        <path d="M6.667 4h18.667c1.467 0 2.667 1.2 2.667 2.667v18.667c0 1.467-1.2 2.667-2.667 2.667H6.667A2.675 2.675 0 0 1 4 25.334V6.667C4 5.2 5.2 4 6.667 4zm16.946 8.44c.64-.533 1.387-1.173 1.72-1.88-.547.28-1.2.453-1.92.547.667-.48 1.213-1.107 1.493-1.96-.693.373-1.4.693-2.28.853-2.067-2.493-7.013-.467-6.133 3.267-3.48-.213-5.6-1.787-7.36-3.72-1 1.627-.133 4.093 1.053 4.773-.613-.04-1.08-.227-1.52-.44.053 2.053 1.187 3.04 2.773 3.573a4.47 4.47 0 0 1-1.52.04c.493 1.427 1.52 2.32 3.28 2.507-1.2 1.013-3.413 1.72-5.2 1.44 1.533.973 3.28 1.747 5.707 1.64 5.88-.267 9.813-4.48 9.907-10.64z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="twitter">
+        <path d="M29.947 8a11.423 11.423 0 0 1-3.28.92 5.738 5.738 0 0 0 2.507-3.173 11.52 11.52 0 0 1-3.627 1.4C24.494 6 23.014 5.334 21.334 5.334c-3.133 0-5.693 2.56-5.693 5.72 0 .453.053.893.147 1.307A16.261 16.261 0 0 1 4.001 6.388a5.663 5.663 0 0 0-.773 2.867c0 1.987 1 3.747 2.547 4.747-.947 0-1.827-.267-2.6-.667v.04a5.724 5.724 0 0 0 4.587 5.613 5.644 5.644 0 0 1-2.574.093c.72 2.253 2.813 3.933 5.333 3.973-1.947 1.547-4.413 2.453-7.107 2.453-.453 0-.907-.027-1.36-.08A16.19 16.19 0 0 0 10.827 28c10.507 0 16.28-8.72 16.28-16.28 0-.253 0-.493-.013-.747A11.42 11.42 0 0 0 29.947 8z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="white-balance-sunny">
+        <path d="M4.733 24.72l1.88 1.88 2.4-2.387L7.12 22.32zm9.934 5.213h2.667V26h-2.667zM16 7.333c-4.413 0-8 3.587-8 8s3.587 8 8 8 8-3.587 8-8c0-4.427-3.587-8-8-8zm10.667 9.334h4V14h-4zm-3.68 7.546l2.4 2.387 1.88-1.88-2.387-2.4zm4.28-18.266l-1.88-1.88-2.4 2.387 1.893 1.893zM17.333.733h-2.667v3.933h2.667zM5.333 14h-4v2.667h4zm3.68-7.547l-2.4-2.387-1.88 1.88 2.387 2.4 1.893-1.893z">
+        </path>
+    </symbol>
+    <symbol xmlns="//www.w3.org/2000/svg" viewbox="0 0 32 32" id="window-close">
+        <path d="M17.947 16l7.387 7.387v1.947h-1.947L16 17.947l-7.387 7.387H6.666v-1.947L14.053 16 6.666 8.613V6.666h1.947L16 14.053l7.387-7.387h1.947v1.947L17.947 16z">
+        </path>
+    </symbol>
+</svg>
+    <div class="site">
+        <header class="site-header container">
+    <div class="header-left">
+        <a class="logo" href="../index.html">
+                <img class="logo-image" src="../content/images/2021/01/Artboard-Copy-1.png" alt="nezubn">
+        </a>
+    </div>
+        <nav class="main-nav hidden-xs hidden-sm hidden-md">
+                <a class="menu-item menu-item-home" href="https://nezubn.com/">Home</a>
+    <a class="menu-item menu-item-tag" href="https://nezubn.com/tag/">Tag</a>
+    <a class="menu-item menu-item-author" href="https://nezubn.com/author/">Author</a>
+
+        </nav>
+
+        <button class="button-icon hidden-lg hidden-xl js-modal" data-modal="search" aria-label="Search">
+            <svg class="icon">
+                <use xlink:href="#magnify"></use>
+            </svg>
+        </button>
+        <div class="burger hidden-lg hidden-xl">
+            <div class="burger-bar"></div>
+            <div class="burger-bar"></div>
+        </div>
+
+        <div class="mobile-menu hidden-lg hidden-xl">
+            <div class="container">
+                <nav class="mobile-nav">
+                        <a class="menu-item menu-item-home" href="https://nezubn.com/">Home</a>
+    <a class="menu-item menu-item-tag" href="https://nezubn.com/tag/">Tag</a>
+    <a class="menu-item menu-item-author" href="https://nezubn.com/author/">Author</a>
+
+                </nav>
+            </div>
+        </div>
+    <div class="header-right hidden-xs hidden-sm hidden-md">
+            <button class="button-icon js-modal" data-modal="search" aria-label="Search">
+                <svg class="icon">
+                    <use xlink:href="#magnify"></use>
+                </svg>
+            </button>
+    </div>
+</header>
+
+        <header class="sticky">
+            <div class="sticky-title">(Untitled)</div>
+            <button class="button-icon sticky-toc-button" aria-label="Table of Contents">
+                <svg class="icon">
+                    <use xlink:href="#table-of-contents"></use>
+                </svg>
+                <div class="sticky-toc"></div>
+            </button>
+            <div class="sticky-track">
+                <div class="sticky-progress"></div>
+            </div>
+        </header>
+        <div class="site-content">
+            
+<div class="content-area">
+    <main class="site-main">
+            <article class="single post no-image">
+    <header class="single-header kg-canvas">
+            <div class="single-meta">
+                <span class="single-meta-item single-meta-date">
+                    <time datetime="2021-01-20">
+                        Jan 20, 2021
+                    </time>
+                </span>
+                <span class="single-meta-item single-meta-length">
+                    14 min read
+                </span>
+            </div>
+        <h1 class="single-title">(Untitled)</h1>
+    </header>
+    <div class="single-content kg-canvas u-text-format">
+            <p><br></p><p># Table of Contents</p><p><br></p><p>1.  [laptop setup and system design for deep learning](#org94aa6ec)</p><p>1.  [Software design principles](#org441c7ea)</p><p>2.  [Points to ponder](#org592b6d3)</p><p>3.  [Pipeline](#orgdc36e10)</p><p>4.  [References](#orge0dcd01)</p><p>2.  [Project structure of Deep Learning project](#org487f124)</p><p>1.  [Project Structure](#orgc9e1d24)</p><p>2.  [Object Oriented Programming in python](#org52a11dd)</p><p>1.  [Abstraction](#org2372f66)</p><p>2.  [Static and class methods](#org56aa7e3)</p><p>3.  [Type checking](#org786b4f5)</p><p>4.  [Documentation](#org15dfd66)</p><p>5.  [References](#orgc95c330)</p><p>3.  [Unit Testing](#org1dc87e3)</p><p>1.  [Why unit testing?](#org5c09b22)</p><p>2.  [Basics of unit testing](#orgbb414ab)</p><p>3.  [Unit tests in Python](#org54688cb)</p><p>4.  [Mocking](#orgf42bfcf)</p><p>5.  [Test coverage](#orgb4cdacd)</p><p>6.  [Test examples](#orgc0eb724)</p><p>7.  [Integration](#org0e0c7fa)</p><p>8.  [Conclusion](#org400fe94)</p><p>9.  [References](#orgd3f9aaf)</p><p>4.  [Logging and Debugging](#orgbb96761)</p><p>1.  [Debug deep learning](#orge9c000a)</p><p>2.  [Logging](#orgeb14bd2)</p><p>3.  [Tensorflow logging and debugging](#org3e41322)</p><p><br></p><p><br></p><p>&lt;a id="org94aa6ec"&gt;&lt;/a&gt;</p><p><br></p><p># DONE [laptop setup and system design for deep learning](https://theaisummer.com/deep-learning-production/)</p><p><br></p><p>Suggested Tools: Git, Github, PyCharm, terminal, slack, zenhub, conda, zoom</p><p><br></p><p>What distinguishes a good engineer from a great engineer?</p><p><br></p><p>-   His ability to plan and design the system before even touching the keyboard. Carefully thinking about the</p><p>architecture, making informed decisions, discussing it with other engineers, and documenting things can save</p><p>a lot of time beforehand. A whole lot of time. Trust me on this. I’m guilty of this more times than I’m proud</p><p>to admit. That’s why, this time we will do it the right way. Thus, it turns out it won’t be such a short</p><p>parenthesis!</p><p><br></p><p>Questions in our mind?</p><p><br></p><p>-   What will happen if more than 1 users ask the model at the same time?</p><p>-   What will happen if for some reason the model crashes?</p><p>-   If it contains a bug we haven’t previously seen?</p><p>-   If the model is too slow and the user has to wait for too long to get a response?</p><p>-   And how can we update our model?</p><p>-   Can we retrain it on new data?</p><p>-   Can we get some feedback if the model performs well?</p><p>-   Can we see how fast or slow the model is?</p><p>-   How much memory does it use?</p><p>-   Where do we store the model weights?</p><p>-   What about the training data?</p><p>-   What if the user sends a malicious request instead of a proper image?</p><p><br></p><p><br></p><p>&lt;a id="org441c7ea"&gt;&lt;/a&gt;</p><p><br></p><p>## Software design principles</p><p><br></p><p>1.  Separation of concerns</p><p>The system should be modularized into different components with each component being a separate maintainable,</p><p>reusable and extensible entity.</p><p>2.  Scalibility</p><p>The system needs to be able to scale as the traffic increases</p><p>3.  Reliability</p><p>The system should continue to be functional even if there is software of hardw   are failure</p><p>4.  Availability</p><p>The system needs to continue operating at all times</p><p>5.  Simplicity</p><p>The system has to be as simple and intuitive as possible</p><p><br></p><p><br></p><p>&lt;a id="org592b6d3"&gt;&lt;/a&gt;</p><p><br></p><p>## Points to ponder</p><p><br></p><p>-   Each user sends a request to our backend. To be able to handle all the simultaneous requests, first we need</p><p>a `Load Balancer` (LB) to handle the traffic and route the requests to the proper server instance.</p><p>-   We maintain more than one instance of the model in order to achieve both scalability and availability. Note</p><p>that these might be physical instances, virtual machines or docker containers and they are organized by a</p><p>distributed system orchestrator (such as Kubernetes)</p><p>-   As you can probably see, each instance may have more than one threads or parallel processes. We need that to</p><p>make sure that the model is fast enough to return a response in real time.</p><p>-   A major problem most machine learning systems face is retraining because in order for the model to stay up to</p><p>date, you should constantly update the model weights based on the new data.</p><p><br></p><p><br></p><p>&lt;a id="orgdc36e10"&gt;&lt;/a&gt;</p><p><br></p><p>## Pipeline</p><p><br></p><p>-   A `database (DB)` to save the requests, the responses and all relative data</p><p>-   A `message queue (MQ)` to send them in the database in an asynchronous manner (to keep the system reliable and</p><p>available)</p><p>-   `Data jobs` to preprocess and transform the data in the correct format so that can be used from our model</p><p>-   `Retrainer` instances that execute the actual training based on the saved data</p><p>-   After retraining the model, the new version will gradually replace all the UNet instances. That way we build</p><p>deep learning `models versioning` functionality, where we always update the model with the newest version.</p><p>-   Finally, we need some sort of `monitoring` and `logging` to have a complete image of what’s happening in our system,</p><p>to catch errors quickly and to discover bottlenecks easily.</p><p><br></p><p>**<strong>NOTE</strong>** Course suggestion: [TensorFlow: Advanced Techniques Specialization](https://www.coursera.org/specializations/tensorflow-advanced-techniques?ranMID=40328&amp;ranEAID=r24KwW5qbBo&amp;ranSiteID=r24KwW5qbBo-SCC7WTJnpybOEZh8z5UxXQ&amp;siteID=r24KwW5qbBo-SCC7WTJnpybOEZh8z5UxXQ&amp;utm_content=10&amp;utm_medium=partners&amp;utm_source=linkshare&amp;utm_campaign=r24KwW5qbBo)</p><p><br></p><p><br></p><p>&lt;a id="orge0dcd01"&gt;&lt;/a&gt;</p><p><br></p><p>## References</p><p><br></p><p>-   [Git and why should it be used?](https://www.nobledesktop.com/blog/what-is-git-and-why-should-you-use-it)</p><p>-   [Setting up python](https://realpython.com/python-windows-machine-learning-setup/)</p><p>-   [macOS terminal with zsh](https://www.freecodecamp.org/news/how-to-configure-your-macos-terminal-with-zsh-like-a-pro-c0ab3f3c1156/)</p><p>-   [System Design Primer](https://github.com/donnemartin/system-design-primer)</p><p><br></p><p><br></p><p>&lt;a id="org487f124"&gt;&lt;/a&gt;</p><p><br></p><p># DONE [Project structure of Deep Learning project](https://theaisummer.com/best-practices-deep-learning-code/)</p><p><br></p><p>Organized, modularized and extensible python code is the goal.</p><p>Machine learning code is ordinary software and should always be treated as one.</p><p><br></p><p>-   as ordinary code it has a project structure, a documentation and design principles such as</p><p>object-oriented programming.</p><p><br></p><p><br></p><p>&lt;a id="orgc9e1d24"&gt;&lt;/a&gt;</p><p><br></p><p>## Project Structure</p><p><br></p><p>The project [structure](https://github.com/The-AI-Summer/Deep-Learning-In-Production/tree/master/1.%20From%20a%20notebook%20to%20serving%20millions%20of%20users) to follow for a deep learning project</p><p><br></p><p>A basic tree structure looks like this:</p><p><br></p><p>├── __init__.py</p><p>├── configs</p><p>│   └── __init__.py</p><p>├── dataloader</p><p>│   └── __init__.py</p><p>├── evaluation</p><p>│   └── __init__.py</p><p>├── executor</p><p>│   └── __init__.py</p><p>├── main.py</p><p>├── model</p><p>│   └── __init__.py</p><p>├── notebooks</p><p>│   └── segmentation.ipynb</p><p>├── ops</p><p>│   └── __init__.py</p><p>└── utils</p><p>└── __init__.py</p><p><br></p><p>**<strong>Module and a Package</strong>**</p><p>Module:</p><p>A module is simply a file containing Python code.</p><p><br></p><p>Package:</p><p>A package, however, is like a directory that holds sub-packages and modules. In order for a package to be importable,</p><p>it should contain a `init.py` file ( even if it’s empty).</p><p><br></p><p>In the following example we have 8 different packages:</p><p><br></p><p>1.  configs</p><p><br></p><p>In configs we define every single thing that can be configurable and can be changed in the future. Good examples are</p><p>training hyperparameters, folder paths, the model architecture, metrics, flags.</p><p><br></p><p>example:</p><p><br></p><p>CFG = {</p><p>"data": {</p><p>"path": "oxford_iiit_pet:3.*.*",</p><p>"image_size": 128,</p><p>"load_with_info": True</p><p>},</p><p>"train": {</p><p>"batch_size": 64,</p><p>"buffer_size": 1000,</p><p>"epoches": 20,</p><p>"val_subsplits": 5,</p><p>"optimizer": {</p><p>"type": "adam"</p><p>},</p><p>"metrics": ["accuracy"]</p><p>},</p><p>"model": {</p><p>"input": [128, 128, 3],</p><p>"up_stack": {</p><p>"layer_1": 512,</p><p>"layer_2": 256,</p><p>"layer_3": 128,</p><p>"layer_4": 64,</p><p>"kernels": 3</p><p>},</p><p>"output": 3</p><p>}</p><p>}</p><p><br></p><p>1.  dataloader</p><p>It is quite self-explanatory. All the data loading and data preprocessing classes and functions live here.</p><p><br></p><p>2.  evaluation</p><p>It is a collection of code that aims to evaluate the performance and accuracy of our model.</p><p><br></p><p>3.  executor</p><p>we usually have all the functions and scripts that train the model or use it to predict something in different</p><p>environments. And by different environments I mean: executors for GPUs, executors for distributed systems. This</p><p>package is our connection with the outer world and it’s what our “main.py” will use.</p><p><br></p><p>4.  model</p><p>It contains the actual deep learning code (we talk about tensorflow, pytorch etc)</p><p><br></p><p>5.  notebooks</p><p>It include all of our jupyter/colab notebooks in one place.</p><p><br></p><p>6.  ops</p><p>This one is not always needed, as it includes operations not related with machine learning such as algebraic transformations,</p><p>image manipulation techniques or maybe graph operations.</p><p><br></p><p>7.  utils</p><p>utilities functions that are used in more than one places and everything that don’t fall in on the above come here.</p><p><br></p><p><br></p><p>&lt;a id="org52a11dd"&gt;&lt;/a&gt;</p><p><br></p><p>## Object Oriented Programming in python</p><p><br></p><p>If we are to code in OOP the UNet model would look like this:</p><p><br></p><p>To understand the &lt; Underscores in Python&gt;, read it and complete it.</p><p><br></p><p>class UNet():</p><p>def __init__(self, config):</p><p>self.base_model = tf.keras.applications.MobileNetV2( input_shape=self.config.model.input, include_top=False)</p><p>self.batch_size = self.config.train.batch_size</p><p>. . .</p><p>def load_data(self):</p><p>"""Loads and Preprocess data """</p><p>self.dataset, self.info = DataLoader().load_data(self.config.data)</p><p>self._preprocess_data()</p><p>def _preprocess_data(self):</p><p>. . .</p><p>def _set_training_parameters(self):</p><p>. . .</p><p>def _normalize(self, input_image, input_mask):</p><p>. . .</p><p>def _load_image_train(self, datapoint):</p><p>. . .</p><p>def _load_image_test(self, datapoint):</p><p>. . .</p><p>def build(self):</p><p>""" Builds the Keras model based """</p><p>layer_names = [</p><p>'block_1_expand_relu',  # 64x64</p><p>'block_3_expand_relu',  # 32x32</p><p>'block_6_expand_relu',  # 16x16</p><p>'block_13_expand_relu',  # 8x8</p><p>'block_16_project',  # 4x4</p><p>]</p><p>layers = [self.base_model.get_layer(name).output for name in layer_names]</p><p>. . .</p><p>self.model = tf.keras.Model(inputs=inputs, outputs=x)</p><p>def train(self):</p><p>. . .</p><p>def evaluate(self):</p><p>. . .</p><p><br></p><p><br></p><p>&lt;a id="org2372f66"&gt;&lt;/a&gt;</p><p><br></p><p>### Abstraction</p><p><br></p><p>Using abstraction we can declare the desired `functionalities` without dealing with how they are going to be implemented.</p><p><br></p><p>class BaseModel(ABC):</p><p>"""Abstract Model class that is inherited to all models"""</p><p>def __init__(self, cfg):</p><p>self.config = Config.from_json(cfg)</p><p>@abstractmethod</p><p>def load_data(self):</p><p>pass</p><p>@abstractmethod</p><p>def build(self):</p><p>pass</p><p>@abstractmethod</p><p>def train(self):</p><p>pass</p><p>@abstractmethod</p><p>def evaluate(self):</p><p>pass</p><p><br></p><p>-   the functions have no body.</p><p>-   every functionality you are gonna need, declare it as an abstract function or class and you are done.</p><p>-   used by other classes that will “extend” our abstract class. This is called `inheritance`.</p><p>-   The base class will be inherited in the “child” class and it will immediately define the structure of the child class.</p><p><br></p><p>class UNet(BaseModel):</p><p>def __<strong>init</strong>__(self, config):</p><p>super().__<strong>init</strong>__(config)</p><p>self.base_model = tf.keras.applications.MobileNetV2(input_shape=self.config.model.input, include_top=False)</p><p>. . .</p><p>def load_data(self):</p><p>self.dataset, self.info = DataLoader().load_data(self.config.data )</p><p>self._preprocess_data()</p><p>. . .</p><p>def build(self):</p><p>. . .</p><p>self.model = tf.keras.Model(inputs=inputs, outputs=x)</p><p>def train(self):</p><p>self.model.compile(optimizer=self.config.train.optimizer.type,</p><p>loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),</p><p>metrics=self.config.train.metrics)</p><p>model_history = self.model.fit(self.train_dataset, epochs=self.epoches,</p><p>steps_per_epoch=self.steps_per_epoch,</p><p>validation_steps=self.validation_steps,</p><p>validation_data=self.test_dataset)</p><p>return model_history.history['loss'], model_history.history['val_loss']</p><p>def evaluate(self):</p><p>predictions = []</p><p>for image, mask in self.dataset.take(1):</p><p>predictions.append(self.model.predict(image))</p><p>return predictions</p><p><br></p><p><br></p><p>&lt;a id="org56aa7e3"&gt;&lt;/a&gt;</p><p><br></p><p>### Static and class methods</p><p><br></p><p>-   Makes our code less error-prone.</p><p>-   The `class` is like the blueprint when creating objects and objects are the instances of a class.</p><p>-   `Class methods` take as arguments the class and they are usually used as constructors for creating new instances of the class.</p><p>-   `Static methods` are methods that refer only to the class, not its instances, and they will not modify the class state.</p><p>-   Static methods are mostly used for utils functions that aren’t gonna change.</p><p><br></p><p>The classmethod “from&lt;sub&gt;json&lt;/sub&gt;” returns an actual instance of the Config class created from a json file by just calling “Config.from&lt;sub&gt;json&lt;/sub&gt;( json&lt;sub&gt;file&lt;/sub&gt; )”</p><p><br></p><p>class Config:</p><p>"""Config class which contains data, train and model hyperparameters"""</p><p>def __init__(self, data, train, model):</p><p>self.data = data</p><p>self.train = train</p><p>self.model = model</p><p>@classmethod</p><p>def from_json(cls, cfg):</p><p>"""Creates config from json"""</p><p>params = json.loads(json.dumps(cfg), object_hook=HelperObject)</p><p>return cls(params.data, params.train, params.model)</p><p><br></p><p>**<strong>Static methods</strong>** on the other hand are methods that are called on the actual object and not some instance of it.</p><p><br></p><p>-   A perfect example in our case is the DataLoader class, where we simply want to load the data from a url.</p><p>-   Is there a reason to have a new DataLoader instance?</p><p>-   Not really, because everything is stable in this functionality and nothing will ever change.</p><p><br></p><p>class DataLoader:</p><p>"""Data Loader class"""</p><p>@staticmethod</p><p>def load_data(data_config):</p><p>"""Loads dataset from path"""</p><p>return tfds.load(data_config.path, with_info=data_config.load_with_info)</p><p><br></p><p><br></p><p>&lt;a id="org786b4f5"&gt;&lt;/a&gt;</p><p><br></p><p>## Type checking</p><p><br></p><p>Type checking is the process of verifying and enforcing the constraints of types.</p><p><br></p><p>def ai_summer_func(x:int) -&gt; int:</p><p>return x+5</p><p><br></p><p><br></p><p>&lt;a id="org15dfd66"&gt;&lt;/a&gt;</p><p><br></p><p>## Documentation</p><p><br></p><p>Documenting our code is the single most important thing in this list and the thing that most of us are guilty of not doing.</p><p><br></p><p>**<strong>BAD</strong>**</p><p><br></p><p>def n(self, ii, im):</p><p>ii = tf.cast(ii, tf.float32) / 255.0</p><p>im -= 1</p><p>return ii, im</p><p><br></p><p>**<strong>GOOD</strong>**</p><p><br></p><p>def _normalize(self, input_image, input_mask):</p><p>""" Normalise input image</p><p>Args:</p><p>input_image (tf.image): The input image</p><p>input_mask (int): The image mask</p><p>Returns:</p><p>input_image (tf.image): The normalized input image</p><p>input_mask (int): The new image mask</p><p>"""</p><p>input_image = tf.cast(input_image, tf.float32) / 255.0</p><p>input_mask -= 1</p><p>return input_image, input_mask</p><p><br></p><p>The comments you can see above are called `docstrings` and are python’s way to document the responsibility of a piece of code.</p><p><br></p><p>The `=first line=` always indicates what the code does and it is the only real essential part (I personally try to always include this</p><p>in my code). The other parts explain what arguments the function accepts (with types and descriptions) and what it returns.</p><p>These can sometimes be ignored if they don’t provide much value. This is based on `Google's style guide`.</p><p><br></p><p><br></p><p>&lt;a id="orgc95c330"&gt;&lt;/a&gt;</p><p><br></p><p>## References</p><p><br></p><p>-   [Modules and packages](https://www.learnpython.org/en/Modules_and_Packages)</p><p>-   [OOP in python](https://realpython.com/python3-object-oriented-programming/)</p><p>-   [Static method and classmethod](https://stackoverflow.com/questions/136097/difference-between-staticmethod-and-classmethod)</p><p>-   [Python type checking](https://www.journaldev.com/33542/python-type-checking)</p><p>-   [Docstrings in Python](https://www.datacamp.com/community/tutorials/docstrings-python)</p><p><br></p><p><br></p><p>&lt;a id="org1dc87e3"&gt;&lt;/a&gt;</p><p><br></p><p># DONE Unit Testing</p><p><br></p><p>source : &lt;https://theaisummer.com/unit-test-deep-learning/&gt;</p><p><br></p><p><br></p><p>&lt;a id="org5c09b22"&gt;&lt;/a&gt;</p><p><br></p><p>## Why unit testing?</p><p><br></p><p>When developing a neural network, most of us don’t care about catching all possible exceptions, finding all corner cases,</p><p>or debugging every single function.</p><p><br></p><p>Unit tests are tremendously useful because they:</p><p><br></p><p>-   Find software bugs early</p><p>-   Debug our code</p><p>-   Ensure that the code does what is supposed to do</p><p>-   Simplify the refactoring process</p><p>-   Speed up the integration process</p><p>-   Act as documentation</p><p><br></p><p><br></p><p>&lt;a id="orgbb414ab"&gt;&lt;/a&gt;</p><p><br></p><p>## Basics of unit testing</p><p><br></p><p>Unit testing is just a `=function calling another function=` (or a unit) and checking if the values returned</p><p>match the expected output.</p><p><br></p><p>We have this simple function that normalized an image by dividing all the pixels by 255.</p><p><br></p><p>def _normalize(self, input_image, input_mask):</p><p>""" Normalise input image</p><p>Args:</p><p>input_image (tf.image): The input image</p><p>input_mask (int): The image mask</p><p>Returns:</p><p>input_image (tf.image): The normalized input image</p><p>input_mask (int): The new image mask</p><p>"""</p><p>input_image = tf.cast(input_image, tf.float32) / 255.0</p><p>input_mask -= 1</p><p>return input_image, input_mask</p><p><br></p><p>To make sure that it does exactly what it is supposed to do, we can write `=another function that uses the “_normalize”=`</p><p>and check its result. It will look something like this.</p><p><br></p><p>def test_normalize(self):</p><p>input_image = np.array([[1., 1.], [1., 1.]])</p><p>input_mask = 1</p><p>expected_image = np.array([[0.00392157, 0.00392157], [0.00392157, 0.00392157]])</p><p>result = self.unet._normalize(input_image, input_mask)</p><p>self.assertEquals(expected_image, result[0])</p><p><br></p><p>The `“test_normalize”` function creates a fake input image, calls the function with that image as an argument, and then makes</p><p>sure that the result is equal to the expected image.</p><p><br></p><p>The `“assertEquals”` is a special function, coming from the unittest package in python, it asserts that the two values are equal.</p><p><br></p><p><br></p><p>&lt;a id="org54688cb"&gt;&lt;/a&gt;</p><p><br></p><p>## Unit tests in Python</p><p><br></p><p>The main test framework/runner that comes into Python’s standard library is [unittest](https://docs.python.org/3/library/unittest.html).</p><p><br></p><p>Unittest is pretty straightforward to use and it has only two requirements:</p><p><br></p><p>-   to put your tests into a class</p><p>-   use its special assert functions</p><p><br></p><p>import unittest</p><p>class UnetTest(unittest.TestCase):</p><p>def test_normalize(self):</p><p>. . .</p><p>if __<strong>name</strong>__ == '__<strong>main</strong>__':</p><p>unittest.main()</p><p><br></p><p>**<strong>Important points to notice here</strong>**</p><p><br></p><p>-   In general, test functions are named with `“test_”` as a prefix followed by the name of the function they test.</p><p>-   To run unit tests, we call the “unittest.main()” function which discovers all tests within the module, runs them</p><p>and prints their output.</p><p>-   Another two powerful frameworks are [pytest](https://docs.pytest.org/en/stable/) and [nose](https://nose.readthedocs.io/en/latest/), which are pretty much governed by the same principles.</p><p><br></p><p>**<strong>Tests in Tensorflow</strong>**</p><p>Since we use Tensorflow to program our model we can take advantage of [tf.test](https://www.tensorflow.org/api_docs/python/tf/test)</p><p><br></p><p>import tensorflow as tf</p><p>class UnetTest(tf.test.TestCase):</p><p>def setUp(self):</p><p>super(UnetTest, self).setUp()</p><p>. . .</p><p>def tearDown(self):</p><p>pass</p><p>def test_normalize(self):</p><p>. . .</p><p>if __name__ == '__main__':</p><p>tf.test.main()</p><p><br></p><p><br></p><p>&lt;a id="orgf42bfcf"&gt;&lt;/a&gt;</p><p><br></p><p>## Mocking</p><p><br></p><p>`Mocking` makes it very easy to replace complex logic or heavy dependencies when testing code using `=dummy objects=`.</p><p>By `dummy objects`, we refer to simple, easy to code objects that have the same structure with our real objects but contain</p><p>`fake` or `useless` data.</p><p><br></p><p>In our case a dummy object might be a 2d tensor with all ones which mimics an actual image (just like the “input&lt;sub&gt;image&lt;/sub&gt; in</p><p>the first code snippet).</p><p><br></p><p>Mocking also helps us control the code’s behavior and simulate expensive calls. Let’s look at an example using once again our UNet.</p><p><br></p><p>def load_data(self):</p><p>""" Loads and Preprocess data """</p><p>self.dataset, self.info = DataLoader().load_data(self.config.data)</p><p>self._preprocess_data()</p><p>def _preprocess_data(self):</p><p>""" Splits into training and test and set training parameters"""</p><p>train = self.dataset['train'].map(self._load_image_train, num_parallel_calls=tf.data.experimental.AUTOTUNE)</p><p>test = self.dataset['test'].map(self._load_image_test)</p><p>self.train_dataset = train.cache().shuffle(self.buffer_size).batch(self.batch_size).repeat()</p><p>self.train_dataset = self.train_dataset.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)</p><p>self.test_dataset = test.batch(self.batch_size)</p><p>def _load_image_train(self, datapoint):</p><p>""" Loads and preprocess  a single training image """</p><p>input_image = tf.image.resize(datapoint['image'], (self.image_size, self.image_size))</p><p>input_mask = tf.image.resize(datapoint['segmentation_mask'], (self.image_size, self.image_size))</p><p>if tf.random.uniform(()) &gt; 0.5:</p><p>input_image = tf.image.flip_left_right(input_image)</p><p>input_mask = tf.image.flip_left_right(input_mask)</p><p>input_image, input_mask = self._normalize(input_image, input_mask)</p><p>return input_image, input_mask</p><p>def _load_image_test(self, datapoint):</p><p>""" Loads and preprocess a single test image"""</p><p>input_image = tf.image.resize(datapoint['image'], (self.image_size, self.image_size))</p><p>input_mask = tf.image.resize(datapoint['segmentation_mask'], (self.image_size, self.image_size))</p><p>input_image, input_mask = self._normalize(input_image, input_mask)</p><p>return input_image, input_mask</p><p><br></p><p>What this code does is splitting the data, some shuffling, some resizing, and batching.</p><p>So we want to test this code.</p><p>Everything is nice and well except that freaking loading function.</p><p><br></p><p>self.dataset, self.info = DataLoader().load_data(self.config.data)</p><p><br></p><p>Are we supposed to load the entire data every time we run a single unit test?</p><p>Nah,</p><p><br></p><p>Therefore, we could `mock` that function to return a dummy dataset instead of calling the real one.</p><p>We can do that with unittest&amp;rsquo;s [mock object package](https://docs.python.org/3/library/unittest.mock.html)</p><p>It provides a mock class “Mock()” to create a mock object directly and a “patch()” decorator that replaces</p><p>an imported module within the module we test with a mock object.</p><p><br></p><p>&gt;<em> For those who aren’t familiar, the decorator is simply a function that wraps another function to extend its</em></p><p>&gt;<em> functionality. Once we declare the wrapper function we can annotate other functions to enhance them. See the</em></p><p>&gt;<em> @patch below? That’s a decorator that wraps the “test&lt;sub&gt;load&lt;/sub&gt;&lt;sub&gt;data&lt;/sub&gt;” with the “patch” function. For more information</em></p><p>&gt;<em> follow the link at the end of the post.</em></p><p><br></p><p>By using the “patch()” decorator we get this:</p><p><br></p><p>@patch('model.unet.DataLoader.load_data')</p><p>def test_load_data(self, mock_data_loader):</p><p>mock_data_loader.side_effect = dummy_load_data</p><p>shape = tf.TensorShape([None, self.unet.image_size, self.unet.image_size, 3])</p><p>self.unet.load_data()</p><p>mock_data_loader.assert_called()</p><p>self.assertItemsEqual(self.unet.train_dataset.element_spec[0].shape, shape)</p><p>self.assertItemsEqual(self.unet.test_dataset.element_spec[0].shape, shape)</p><p><br></p><p><br></p><p>&lt;a id="orgb4cdacd"&gt;&lt;/a&gt;</p><p><br></p><p>## Test coverage</p><p><br></p><p>By coverage, we mean how much of our code is actually tested by unit tests.</p><p>Coverage is an invaluable metric that can help us write better unit tests, discover which areas</p><p>our tests don’t exercise, find new test cases, and ensure the quality of our tests.</p><p><br></p><p>coverage run -m unittest /path_to_folder/tests/unet_test.py</p><p>coverage report -m /path_to_folder/tests/unet_test.py</p><p>output--</p><p>Name                          Stmts   Miss    Cover   Missing</p><p>-------------------------------------------------------------</p><p>model/tests/unet_test.py       35      1       97%      52</p><p><br></p><p>This says that we cover 97% of our code. There are 35 statements in total and we missed just 1 of them.</p><p>The missing info tells us which lines of code still need coverage.</p><p><br></p><p><br></p><p>&lt;a id="orgc0eb724"&gt;&lt;/a&gt;</p><p><br></p><p>## Test examples</p><p><br></p><p>Explore some of the different deep learning scenarios and parts of the codebase when unit testing can be incredibly useful.</p><p><br></p><p>**<strong>DATA</strong>**</p><p><br></p><p>-   Ensure that our data has the right format (yes I put it again here for completion)</p><p>-   Ensure that the training labels are correct</p><p>-   Test our complex processing steps such as image manipulation</p><p>-   Assert data completion, quality, and errors</p><p>-   Test the distribution of the features</p><p><br></p><p>**<strong>TRAINING</strong>**</p><p><br></p><p>-   Run a training step and compare the weight before and after to ensure that they are updated</p><p>-   Check that our loss function can be actually used on our data</p><p><br></p><p>**<strong>EVALUATION</strong>**</p><p><br></p><p>-   Having tests to ensure that your metrics ( e.g accuracy, precision, and recall ) are above a threshold when iterating</p><p><br></p><p>over different architectures</p><p><br></p><p>-   You can run speed/benchmark tests on training to catch possible overfitting</p><p>-   Of course, cross-validation can be in the form of a unit test</p><p><br></p><p>**<strong>MODEL ARCHITECTURE</strong>**</p><p><br></p><p>-   The model’s layers are actually stacking</p><p>-   The model’s output has the correct shape</p><p><br></p><p>example:</p><p><br></p><p>def test_ouput_size(self):</p><p>shape = (1, self.unet.image_size, self.unet.image_size, 3)</p><p>image = tf.ones(shape)</p><p>self.unet.build()</p><p>self.assertEqual(self.unet.model.predict(image).shape, shape)</p><p><br></p><p>Define the expected shape, construct a dummy input, build the model, and run a prediction is all it takes.</p><p>Sometimes a few lines of code can save us from a lot of trouble.</p><p><br></p><p><br></p><p>&lt;a id="org0e0c7fa"&gt;&lt;/a&gt;</p><p><br></p><p>## Integration</p><p><br></p><p>These kinds of tests are very powerful tools and aim to test how well our system integrates with other systems.</p><p>We want to be certain that the model returns what the user/client expects in the form that he expects it.</p><p><br></p><p><br></p><p>&lt;a id="org400fe94"&gt;&lt;/a&gt;</p><p><br></p><p>## Conclusion</p><p><br></p><p>-   Unit tests are indeed an invaluable tool in our arsenal, especially when building complex deep learning models.</p><p>-   My laziness has come and bitten me more times than I can count, so I decided to always write them from now on.</p><p>-   But again, we always need to find a balance.</p><p><br></p><p><br></p><p>&lt;a id="orgd3f9aaf"&gt;&lt;/a&gt;</p><p><br></p><p>## References</p><p><br></p><p>-   [Python decorators](https://www.programiz.com/python-programming/decorator)</p><p>-   [Code coverage](https://en.wikipedia.org/wiki/Code_coverage)</p><p>-   [Mocking](https://www.toptal.com/python/an-introduction-to-mocking-in-python)</p><p>-   [Testing in Python](https://realpython.com/python-testing/)</p><p><br></p><p><br></p><p>&lt;a id="orgbb96761"&gt;&lt;/a&gt;</p><p><br></p><p># IN-PROGRESS Logging and Debugging</p><p><br></p><p>source :: &lt;https://theaisummer.com/logging-debugging/&gt;</p><p><br></p><p><br></p><p>&lt;a id="orge9c000a"&gt;&lt;/a&gt;</p><p><br></p><p>## Debug deep learning</p><p><br></p><p><br></p><p>&lt;a id="orgeb14bd2"&gt;&lt;/a&gt;</p><p><br></p><p>## Logging</p><p><br></p><p><br></p><p>&lt;a id="org3e41322"&gt;&lt;/a&gt;</p><p><br></p><p>## Tensorflow logging and debugging</p><p><br></p>
+    </div>
+        <footer class="single-footer container medium">
+            <div class="single-footer-left">
+                    <div class="navigation navigation-previous">
+                        <a class="navigation-link" href="../a-lifes-journey-of-a-programmer/index.html" aria-label="Previous post">
+                            <svg class="icon navigation-icon">
+                                <use xlink:href="#arrow-left"></use>
+                            </svg>
+                        </a>
+                    </div>
+            </div>
+            <div class="single-footer-middle">
+                <div class="single-footer-top">
+                    <h3 class="single-footer-title">Published by:</h3>
+                    <div class="author-list">
+                            <div class="author-image-placeholder u-placeholder square">
+                                <a href="../author/ankit/index.html" title="Ankit Sharma">
+                                    <img class="author-image lazyload u-object-fit" data-srcset="//www.gravatar.com/avatar/b30d00eb97419ed45996472664491f48?s=250&amp;d=mm&amp;r=x" src="//www.gravatar.com/avatar/b30d00eb97419ed45996472664491f48?s=250&amp;d=mm&amp;r=x" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Ankit Sharma">
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="single-footer-bottom">
+                    <div class="share">
+                        <a class="share-link share-link-facebook" href="https://www.facebook.com/sharer.php?u=nezubn.com/untitled/" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon icon-facebook">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                            Share
+                        </a>
+                        <a class="share-link share-link-twitter" href="https://twitter.com/intent/tweet?url=nezubn.com/untitled/&amp;text=(Untitled)" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon icon-twitter">
+                                <use xlink:href="#twitter"></use>
+                            </svg>
+                            Tweet
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="single-footer-right">
+                    <div class="navigation navigation-next">
+                        <a class="navigation-link" href="../from-code-to-production/index.html" aria-label="Next post">
+                            <svg class="icon navigation-icon">
+                                <use xlink:href="#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+            </div>
+        </footer>
+</article>                            </main>
+</div>
+        </div>
+        <footer class="site-footer container">
+    <div class="social">
+            <a class="social-item social-item-facebook" href="https://www.facebook.com/nezubn" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg class="icon">
+                    <use xlink:href="#facebook-box"></use>
+                </svg>
+            </a>
+            <a class="social-item social-item-twitter" href="https://twitter.com/nezubn" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <svg class="icon">
+                    <use xlink:href="#twitter-box"></use>
+                </svg>
+            </a>
+        <a class="social-item social-item-rss" href="https://feedly.com/i/subscription/feed/nezubn.com/rss/" target="_blank" rel="noopener noreferrer" aria-label="RSS">
+            <svg class="icon">
+                <use xlink:href="#rss-box"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="copyright">
+        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener noreferrer">Ghost</a>
+    </div>
+
+    <nav class="footer-nav">
+        
+        <a class="menu-item js-theme" href="index.html#" data-system="System theme" data-dark="Dark theme" data-light="Light theme">
+            <svg class="icon theme-icon theme-icon-system">
+                <use xlink:href="#circle-half-full"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-dark">
+                <use xlink:href="#brightness-2"></use>
+            </svg>
+            <svg class="icon theme-icon theme-icon-light">
+                <use xlink:href="#white-balance-sunny"></use>
+            </svg>
+            <span class="theme-text">System theme</span>
+        </a>
+    </nav>
+</footer>        <div class="modal-overlay">
+    <div class="modal modal-search">
+        <div class="form-wrapper">
+            <input class="modal-input search-input" type="search" placeholder="Enter keyword...">
+            <button class="form-button search-button" aria-label="Search">
+                <svg class="icon icon-search">
+                    <use xlink:href="#magnify"></use>
+                </svg>
+                <svg class="icon icon-close">
+                    <use xlink:href="#window-close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="search-result"></div>
+    </div>
+    <button class="button-icon modal-close" aria-label="Close">
+        <svg class="icon icon-close">
+            <use xlink:href="#window-close"></use>
+        </svg>
+    </button>
+</div>        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides.
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/main.min.js?v=b6ee553ed7"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js" integrity="sha256-NFZVyNmS1YlmiklazBA+TALYJlJtZj/y/i/oADk6CVE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-markup-templating.min.js" integrity="sha256-41PtHfb57czcvRtAYtUhYcSaLDZ3ahSDmVZarE0uWPo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-javascript.min.js" integrity="sha256-KxieZ8/m0L2wDwOE1+F76U3TMFw4wc55EzHvzTC6Ej8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-css.min.js" integrity="sha256-49Y45o2obU1Yv4zkYDpMDyAa+D9sgKNbNy4ZYGRl/ls=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-php.min.js" integrity="sha256-gJj4RKQeXyXlVFu2I8jQACQZsii/YzVMhcDT99lr45I=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-sql.min.js" integrity="sha256-zgHnuWPEbzVKrT72LUtMObJgbwkv0VESwRfz7jpdsq0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-yaml.min.js" integrity="sha256-JoqiKM2GipZjbGjNyl62d6qjQY1F9QTLriWOe4N76wE=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-sass.min.js" integrity="sha256-3oigyyaPovKMS9Ktg4ahAD1R6fOSMGASuA03DT8IrvU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-json.min.js" integrity="sha256-18m89UBQcWGjPHHo64UD+sQx4SpMxiRI1F0MbefKXWw=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-bash.min.js" integrity="sha256-0W9ddRPtgrjvZVUxGhU/ShLxFi3WGNV2T7A7bBTuDWo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-python.min.js" integrity="sha256-zXSwQE9cCZ8HHjjOoy6sDGyl5/3i2VFAxU8XxJWfhC0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/components/prism-ruby.min.js" integrity="sha256-SGBXZakPP3Fv0P4U6jksuwZQU5FlC22ZAANstHSSp3k=" crossorigin="anonymous"></script>
+</body>
+
+</html>
