@@ -2,22 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/posts/this-is-a-test-blog/</loc>
+    <loc>https://nezubn.com/tags/blog/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/info/</loc>
+    <loc>https://nezubn.com/posts/blogging-with-github-pages-and-emacs-in-2022/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/</loc>
+    <loc>https://nezubn.com/posts/this-is-a-test-blog/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/</loc>
+    <loc>https://nezubn.com/tags/info/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/</loc>
+    <loc>https://nezubn.com/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/test/</loc>
+    <loc>https://nezubn.com/posts/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/tags/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/tags/test/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url>
 </urlset>

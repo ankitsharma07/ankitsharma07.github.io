@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nezubn&#39;s Life, Universe and Everything</title>
-    <link>https://nezubn.com/</link>
-    <description>Recent content on Nezubn&#39;s Life, Universe and Everything</description>
+    <title>blog on Nezubn&#39;s Life, Universe and Everything</title>
+    <link>https://nezubn.com/tags/blog/</link>
+    <description>Recent content in blog on Nezubn&#39;s Life, Universe and Everything</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ankitsharma07&#34;&gt;Ankit Sharma&lt;/a&gt; 2022</copyright>
-    <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I configured my blog?</title>
       <link>https://nezubn.com/posts/blogging-with-github-pages-and-emacs-in-2022/</link>
@@ -15,15 +15,6 @@
       
       <guid>https://nezubn.com/posts/blogging-with-github-pages-and-emacs-in-2022/</guid>
       <description>Configuring Hugo and Github Pages Publishing from Org-mode </description>
-    </item>
-    
-    <item>
-      <title>Info</title>
-      <link>https://nezubn.com/posts/this-is-a-test-blog/</link>
-      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://nezubn.com/posts/this-is-a-test-blog/</guid>
-      <description>New blog posts will arrive soon. Stay tuned!</description>
     </item>
     
   </channel>
