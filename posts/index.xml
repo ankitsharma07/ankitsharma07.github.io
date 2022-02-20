@@ -15,7 +15,8 @@
       
       <guid>https://nezubn.com/posts/code-snippets/</guid>
       <description>Running a simple python code
-def add(x, y): return x + y print(add(4, 5)) </description>
+def add(x, y): return x + y print(add(4, 5))  Running a simple c++ code
+#include &amp;lt;iostream&amp;gt; using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl; return 0; } </description>
     </item>
     
     <item>
