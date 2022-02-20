@@ -5001,6 +5001,7 @@ a.nav-item.is-tab.is-active {
 }
 
 .nav-center {
+  padding: 20px;
   -ms-flex-align: stretch;
   align-items: stretch;
   display: -webkit-box;

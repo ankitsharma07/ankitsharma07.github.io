@@ -1,8 +1,10 @@
 .content h1,
-.content h2,
+.content h2 {
+    color: #B52223;
+}
 .content h3,
 .content h4,
 .content h5,
 .content h6 {
-    color: #B52223; // Custom Color
+    color: #2078B2; // Custom Color
 }
