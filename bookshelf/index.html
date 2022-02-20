@@ -38,7 +38,9 @@
 
     <nav class="nav">
       
-      <div class="nav-left"><a class="nav-item" href="https://nezubn.com/about/">
+      <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
+          <h2 class="title is-5">home</h2>
+        </a><a class="nav-item" href="https://nezubn.com/about/">
           <h2 class="title is-5">about</h2>
         </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
           <h2 class="title is-5">bookshelf</h2>
@@ -81,8 +83,6 @@
   <div class="container">
     <aside><div id="disqus_thread"></div></aside>
   
-    <div id="show_comments"><a id="load_comments" class="button is-link">Load comments</a></div>
-  
     <script type="text/javascript">
       var disqus_shortname = 'shortname';
       function disqus() {
@@ -91,17 +91,7 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       }
   
-      
-      var hash = window.location.hash.substr(1);
-      if ((hash.length > 8) && (hash.substring(0, 8) === "comment-")) {
-        disqus();
-        document.getElementById("show_comments").style.display = "none";
-      } else {
-        document.getElementById('load_comments').onclick = function() {
-          disqus();
-          document.getElementById("show_comments").style.display = "none";
-        };
-      }
+      disqus();
   
 
     </script>
