@@ -2,7 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nezubn.com/about/</loc>
+    <lastmod>2022-02-20T11:06:57+05:30</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/bookshelf/</loc>
+    <lastmod>2022-02-20T11:06:57+05:30</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/now/</loc>
+    <lastmod>2022-02-20T11:06:57+05:30</lastmod>
+  </url><url>
     <loc>https://nezubn.com/tags/blog/</loc>
+    <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/posts/code-snippets/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/posts/blogging-with-github-pages-and-emacs-in-2022/</loc>

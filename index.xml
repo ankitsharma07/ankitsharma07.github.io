@@ -1,13 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nezubn&#39;s Life, Universe and Everything</title>
+    <title>nezubn</title>
     <link>https://nezubn.com/</link>
-    <description>Recent content on Nezubn&#39;s Life, Universe and Everything</description>
+    <description>Recent content on nezubn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ankitsharma07&#34;&gt;Ankit Sharma&lt;/a&gt; 2022</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://github.com/ankitsharma07&#34;&gt;Ankit Sharma&lt;/a&gt; 2022 | &lt;a href=&#34;https://nezubn.com/about&#34;&gt;About&lt;/a&gt; | &lt;a href=&#34;https://nezubn.com/bookshelf&#34;&gt;Bookshelf&lt;/a&gt; | &lt;a href=&#34;https://nezubn.com/now&#34;&gt;Now&lt;/a&gt;</copyright>
     <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://nezubn.com/about/</link>
+      <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
+      
+      <guid>https://nezubn.com/about/</guid>
+      <description>Hi I am Ankit Sharma and I work as an Machine Learning Engineer. My interests range from reading fiction, study science, machine learning and building on Apple platforms.</description>
+    </item>
+    
+    <item>
+      <title>Bookshelf</title>
+      <link>https://nezubn.com/bookshelf/</link>
+      <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
+      
+      <guid>https://nezubn.com/bookshelf/</guid>
+      <description>The books I have read and recommended readings:</description>
+    </item>
+    
+    <item>
+      <title>Now</title>
+      <link>https://nezubn.com/now/</link>
+      <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
+      
+      <guid>https://nezubn.com/now/</guid>
+      <description>What I am doing now? Work I am working as a Software Engineer in a startup, OnionDev Tech (Gram vaani). My work involves around writing Django Apps to training and deploying Machine Learning models. Current project: To make an QnA System from unstructured data where a farmer can ask anything about his/her crops over an IVR system.
+ This concept of now page is inspired from Derek Sivers</description>
+    </item>
+    
+    <item>
+      <title>Code examples</title>
+      <link>https://nezubn.com/posts/code-snippets/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/posts/code-snippets/</guid>
+      <description>Running a simple python code
+def add(x, y): return x + y print(add(4, 5)) </description>
+    </item>
+    
     <item>
       <title>How I configured my blog?</title>
       <link>https://nezubn.com/posts/blogging-with-github-pages-and-emacs-in-2022/</link>
