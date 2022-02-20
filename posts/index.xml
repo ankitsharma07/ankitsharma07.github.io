@@ -33,7 +33,10 @@ def add(x, y): return x + y print(add(4, 5)) </description>
       <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nezubn.com/posts/this-is-a-test-blog/</guid>
-      <description>New blog posts will arrive soon. Stay tuned!</description>
+      <description>New blog posts will arrive soon. Stay tuned!
+ Example of shortcode and embedding a tweet
+I tried to live with the Compact mode for tabs in Safari and I really couldn’t. What a mess this has been?
+&amp;mdash; Ankit Sharma (@nezubn) January 3, 2022  </description>
     </item>
     
   </channel>
