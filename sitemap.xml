@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nezubn.com/about/</loc>
-    <lastmod>2022-02-20T11:06:57+05:30</lastmod>
-  </url><url>
     <loc>https://nezubn.com/bookshelf/</loc>
+    <lastmod>2022-02-21T11:06:57+05:30</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/about/</loc>
     <lastmod>2022-02-20T11:06:57+05:30</lastmod>
   </url><url>
     <loc>https://nezubn.com/now/</loc>
