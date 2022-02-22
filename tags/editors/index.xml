@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on nezubn</title>
-    <link>https://nezubn.com/posts/</link>
-    <description>Recent content in Posts on nezubn</description>
+    <title>editors on nezubn</title>
+    <link>https://nezubn.com/tags/editors/</link>
+    <description>Recent content in editors on nezubn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2022</copyright>
-    <lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/tags/editors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started with Python Programming in Emacs</title>
       <link>https://nezubn.com/posts/python-in-emacs/</link>
@@ -16,18 +16,6 @@
       <guid>https://nezubn.com/posts/python-in-emacs/</guid>
       <description>Python is a fun language to code and we all need some editor/IDE for that. Few prefer vi, while few are in love with vs code. PyCharm is ruling if we talk about IDEs.
 My personal favorite editor is Emacs. Hands down! Emacs is more than 40 years old and it is still one of most advanced editor out there.</description>
-    </item>
-    
-    <item>
-      <title>Code examples</title>
-      <link>https://nezubn.com/posts/code-snippets/</link>
-      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://nezubn.com/posts/code-snippets/</guid>
-      <description>Running a simple python code
-def add(x, y): return x + y print(add(4, 5))  emacs lisp
-message(&amp;#34;Hello, World!&amp;#34;)  c++
-#include &amp;lt;iostream&amp;gt; using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl; return 0; } </description>
     </item>
     
   </channel>
