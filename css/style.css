@@ -2536,6 +2536,13 @@ a.box:active {
   font-size: 18px;
 }
 
+/* sample */
+.title.is-5:hover {
+  color: #0C6ACE;
+  text-decoration: underline;
+  text-decoration-color: #0c6ace;
+}
+
 .title.is-5 code,
 .title.is-6,
 .title.is-6 code {
