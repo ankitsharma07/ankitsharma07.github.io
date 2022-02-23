@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nezubn.com/til/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/uses/</loc>
+    <lastmod>2022-02-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nezubn.com/bookshelf/</loc>
     <lastmod>2022-02-21T11:06:57+05:30</lastmod>
   </url><url>
@@ -14,14 +20,7 @@
     <loc>https://nezubn.com/people/</loc>
     <lastmod>2022-02-20T11:06:57+05:30</lastmod>
   </url><url>
-    <loc>https://nezubn.com/posts/code-snippets/</loc>
-    <lastmod>2022-02-21T16:13:05+05:30</lastmod>
-  </url><url>
     <loc>https://nezubn.com/</loc>
-    <lastmod>2022-02-21T16:13:05+05:30</lastmod>
-  </url><url>
-    <loc>https://nezubn.com/posts/</loc>
-    <lastmod>2022-02-21T16:13:05+05:30</lastmod>
   </url><url>
     <loc>https://nezubn.com/tags/</loc>
   </url>

@@ -6,8 +6,28 @@
     <description>Recent content on nezubn </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2022</copyright>
-    <lastBuildDate>Sun, 20 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2022</copyright><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Today I Learned</title>
+      <link>https://nezubn.com/til/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/til/</guid>
+      <description>Whatever I end up learning on my day to day exploration. If it seem interesting to me I will share it as a post here.
+ </description>
+    </item>
+    
+    <item>
+      <title>Uses this</title>
+      <link>https://nezubn.com/uses/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/uses/</guid>
+      <description>Hardware, services and tools I am using to get things done.
+Starting with my dream setup which I found on r/battlestations. I would like to have a similar setup in the coming years for me.
+Dream Setup  My Current Setup looks something like this. Hardware  MacBook Pro 16&amp;quot; Intel: Primary personal computer iPhone 13: Primary phone AirPods Pro iPad Mini 5th generation Apple Pencil 1st generation HomePod 1st generation Lenovo IdeaPad: Work computer Canon 700D DSLR Camera  </description>
+    </item>
+    
     <item>
       <title>Bookshelf</title>
       <link>https://nezubn.com/bookshelf/</link>
@@ -45,19 +65,9 @@ Learning  I am completing the fast.ai course on Practical Deep Learning for Code
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/people/</guid>
-      <description>Influential people around the internet  </description>
-    </item>
-    
-    <item>
-      <title>Code examples</title>
-      <link>https://nezubn.com/posts/code-snippets/</link>
-      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://nezubn.com/posts/code-snippets/</guid>
-      <description>Running a simple python code
-def add(x, y): return x + y print(add(4, 5))  emacs lisp
-message(&amp;#34;Hello, World!&amp;#34;)  c++
-#include &amp;lt;iostream&amp;gt; using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl; return 0; } </description>
+      <description>Internet people who write about a variety of topics. I have tried to make this list of people sorted based on their expertise in their respective fields.
+Format of the list (twitter | website)
+Learning  balajis | web paulg | web Aaron Swartz VitalikButerin | web naval | web   </description>
     </item>
     
   </channel>
