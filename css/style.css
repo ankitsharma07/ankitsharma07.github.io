@@ -316,6 +316,7 @@ input[type="button"] {
 }
 
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
   font-size: 14px;
   -moz-osx-font-smoothing: grayscale;
@@ -6679,9 +6680,12 @@ div.subtitle.tags {
 }
 
 
-/* add dark mode */
-body.dark-mode,
-body.dark-mode main * {
-    background: rgb(45, 45, 45);
-    color: #f5f5f5;
+.section-nav-toc {
+  /* position: -webkit-sticky; */
+  /* position: sticky; */
+  top: 4rem;
+  transition: top 0.2s ease-in-out;
+  animation: fade-up 0.8s;
+  border-left: 1px solid #eee;
+  padding: .3rem 1.5rem;
 }
