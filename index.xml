@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nezubn </title>
+    <title>nezubn</title>
     <link>https://nezubn.com/</link>
-    <description>Recent content on nezubn </description>
+    <description>Recent content on nezubn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2022</copyright><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
@@ -66,8 +66,7 @@ Learning  I am completing the fast.ai course on Practical Deep Learning for Code
       
       <guid>https://nezubn.com/people/</guid>
       <description>Internet people who write about a variety of topics. I have tried to make this list of people sorted based on their expertise in their respective fields.
-Format of the list (twitter | website)
-Learning  balajis | web paulg | web Aaron Swartz VitalikButerin | web naval | web   </description>
+Startups, Products &amp;amp; Strategy  Balaji Srinivasan | balajis Paul Graham | paulg Aaron Swartz Vitalik Buterin | vitalikbuterin Naval | naval  Software Engineering  John Siracusa | siracusa Joel Spolsky | spolsky  Machine Learning  Andrej Karpathy | blog | karpathy Greg Brockman | gdb Yann LeCun | ylecun   </description>
     </item>
     
   </channel>
