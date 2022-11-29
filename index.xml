@@ -13,8 +13,7 @@
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nezubn.com/til/</guid>
-      <description>Whatever I end up learning on my day to day exploration. If it seem interesting to me I will share it as a post here.
- </description>
+      <description>Whatever I end up learning on my day to day exploration. If it seem interesting to me I will share it as a post here.</description>
     </item>
     
     <item>
@@ -25,7 +24,7 @@
       <guid>https://nezubn.com/uses/</guid>
       <description>Hardware, services and tools I am using to get things done.
 Starting with my dream setup which I found on r/battlestations. I would like to have a similar setup in the coming years for me.
-Dream Setup  My Current Setup looks something like this. Hardware  MacBook Pro 16&amp;quot; Intel: Primary personal computer Lenovo IdeaPad: Work computer iPhone 13: Primary phone iPad Mini 5th generation Apple Watch SE AirPods Pro Apple Pencil 1st generation HomePod 1st generation Canon 700D DSLR Camera  Software On Laptop  Emacs: For coding and taking notes Org-mode and Org-roam: For making notes (Zettelkasten) Safari: My main browser Apple Pages: For anything related to document Apple Keynote: It&amp;rsquo;s the best software for making presentations Microsoft Excel: For anything related to data Microsoft VS Code: My other code editor Brave Browser: My occasional browser Craft: For saving everything on the go Things 3: For my project management Figma: For designing wallpapers Tweetbot: For browsing twitter Discord: For communities and their messages I never read Slack: For work Apple Music Xcode Apple Podcasts Photos iMessage Telegram  On iPad  Books Safari Netflix Onefootball  On Phone  Tweetbot: Twitter client app Apollo: For browsing Reddit Reeder: One of the best RSS app ever developed Github Social  iMessage Telegram Signal WhatsApp LinkedIn: Every now and then Instagram: I have a Screen Time set for 20 minutes   Apple Notes: For taking notes on the fly Craft: For saving any tweet/article that I might read later Things 3: For my project management Oak: My main meditation app Kite: For investing in Indian stock market Groww: To invest in Mutual Binance: To invest in crypto Apple Email: My personal email application Outlook: For my work email Apple Music Apple Podcasts  </description>
+Dream Setup My Current Setup looks something like this. Hardware MacBook Pro 16&amp;quot; Intel: Primary personal computer Lenovo IdeaPad: Work computer iPhone 13: Primary phone iPad Mini 5th generation Apple Watch SE AirPods Pro Apple Pencil 1st generation HomePod 1st generation Canon 700D DSLR Camera Software On Laptop Emacs: For coding and taking notes Org-mode and Org-roam: For making notes (Zettelkasten) Safari: My main browser Apple Pages: For anything related to document Apple Keynote: It&amp;rsquo;s the best software for making presentations Microsoft Excel: For anything related to data Microsoft VS Code: My other code editor Brave Browser: My occasional browser Craft: For saving everything on the go Things 3: For my project management Figma: For designing wallpapers Tweetbot: For browsing twitter Discord: For communities and their messages I never read Slack: For work Apple Music Xcode Apple Podcasts Photos iMessage Telegram On iPad Books Safari Netflix Onefootball On Phone Tweetbot: Twitter client app Apollo: For browsing Reddit Reeder: One of the best RSS app ever developed Github Social iMessage Telegram Signal WhatsApp LinkedIn: Every now and then Instagram: I have a Screen Time set for 20 minutes Apple Notes: For taking notes on the fly Craft: For saving any tweet/article that I might read later Things 3: For my project management Oak: My main meditation app Kite: For investing in Indian stock market Groww: To invest in Mutual Binance: To invest in crypto Apple Email: My personal email application Outlook: For my work email Apple Music Apple Podcasts </description>
     </item>
     
     <item>
@@ -36,7 +35,7 @@ Dream Setup  My Current Setup looks something like this. Hardware  MacBook Pro 1
       <guid>https://nezubn.com/bookshelf/</guid>
       <description>This will be interesting to some people, who want to read some great books and don&amp;rsquo;t know where to start from. I will try to have these books in physical form and I&amp;rsquo;ll keep updating this list as I read more books.
 If you got recommendations, feel free to drop a note!
-The books I have read and I recommend you should too  Currently reading  Bad Blood, John Carreyrou Deep Learning with Python: 2nd edition, François Chollet The Volcabulary Builder Workbook  Biographies &amp;amp; Start-up Stories  Steve Jobs, Walter Isaacson Johan Cryuff My Turn Jony Ive: The Genius Behind Apple&amp;rsquo;s Greatest Products, Leander Kahney Shoe Dog: A Memoir by the creator of Nike, Phil Knight Hatching twitter No filter: The inside story of Instagram Creativity Inc.</description>
+The books I have read and I recommend you should too Currently reading Bad Blood, John Carreyrou Deep Learning with Python: 2nd edition, François Chollet [A Brief History of Time] [A man called Ove] Biographies &amp;amp; Start-up Stories Steve Jobs, Walter Isaacson Johan Cryuff My Turn Jony Ive: The Genius Behind Apple&amp;rsquo;s Greatest Products, Leander Kahney Shoe Dog: A Memoir by the creator of Nike, Phil Knight Hatching twitter No filter: The inside story of Instagram Creativity Inc.</description>
     </item>
     
     <item>
@@ -45,8 +44,9 @@ The books I have read and I recommend you should too  Currently reading  Bad Blo
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/about/</guid>
-      <description>Hi! I am Ankit Sharma and I work as an Machine Learning Engineer @Gram Vaani. Previously, I worked as a Senior Research Associate @Mirrorsize. My interests range from reading fiction, study science, machine learning and building on Apple platforms.
-Public Profiles  twitter stackoverflow linkedin hackernews reddit medium telegram instagram facebook  </description>
+      <description>Hi, I am Ankit Sharma and I have been working in Machine Learning for almost ~3 years. I currently, work as an Software Engineer @Gramvaani. My interests range from reading non-fiction and sci-fi, study physics, machine learning and breaking and building on Apple platforms.
+Currently, I live in Noida, Uttar Pradesh but natively I am from Patna, Bihar.
+Public Profiles mastodon twitter stackoverflow linkedin hackernews reddit medium telegram instagram facebook </description>
     </item>
     
     <item>
@@ -55,8 +55,9 @@ Public Profiles  twitter stackoverflow linkedin hackernews reddit medium telegra
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/now/</guid>
-      <description>What I am doing now? Work I am working as a Machine Learning Engineer in a startup, OnionDev Tech (Gram vaani). My work involves around writing Django Apps to training and deploying Machine Learning models. Current project: To make an QnA System from unstructured data where a farmer can ask anything about his/her crops over an IVR system.
-Learning  I am completing the fast.ai course on Practical Deep Learning for Coders.</description>
+      <description>What I am doing now? Work I am working as a Machine Learning Engineer in a startup, OnionDev Tech (Gramvaani). My work involves around writing Django Apps to training and deploying Machine Learning models.
+Previous project: To make a QnA System from unstructured data where a farmer can ask anything about his/her crops over an IVR system.
+Current project: Exploring climate conditions and effects of areas for growing crops using satellite images of places in UP and Bihar.</description>
     </item>
     
     <item>
@@ -65,8 +66,9 @@ Learning  I am completing the fast.ai course on Practical Deep Learning for Code
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/people/</guid>
-      <description>Internet people who write about a variety of topics. I have tried to make this list of people sorted based on their expertise in their respective fields.
-Startups, Products &amp;amp; Strategy  Balaji Srinivasan | balajis Paul Graham | paulg Aaron Swartz Vitalik Buterin | vitalikbuterin Naval | naval  Software Engineering  John Siracusa | siracusa Joel Spolsky | spolsky  Machine Learning  Andrej Karpathy | blog | karpathy Greg Brockman | gdb Yann LeCun | ylecun   </description>
+      <description>
+Internet people who write about a variety of topics. I have tried to make this list of people sorted based on their expertise in their respective fields.
+Startups, Products &amp;amp; Strategy Balaji Srinivasan | balajis Paul Graham | paulg Aaron Swartz Vitalik Buterin | vitalikbuterin Naval | naval Software Engineering John Siracusa | siracusa Joel Spolsky | spolsky Machine Learning Andrej Karpathy | blog | karpathy Greg Brockman | gdb Yann LeCun | ylecun </description>
     </item>
     
   </channel>
