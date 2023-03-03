@@ -6,7 +6,28 @@
     <description>Recent content on ankit sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
+    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding haptic feedback to buttons in iOS</title>
+      <link>https://nezubn.com/posts/haptic-feedback/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/posts/haptic-feedback/</guid>
+      <description>Heading 1 This is under heading 1
+Heading 2 This is under heading 2</description>
+    </item>
+    
+    <item>
+      <title>Hello, World</title>
+      <link>https://nezubn.com/posts/hello-world/</link>
+      <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/posts/hello-world/</guid>
+      <description>Hello, World
+#include &amp;lt;iostream&amp;gt; using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl; return 0; } </description>
+    </item>
+    
     <item>
       <title>Today I Learned</title>
       <link>https://nezubn.com/til/</link>
