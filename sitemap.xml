@@ -3,21 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nezubn.com/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/categories/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/categories/dl/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/tags/llm/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/tags/ml/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/categories/ml/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/tags/nlp/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/posts/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/tags/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/posts/the-ai-summer/</loc>
+    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/tags/hello/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/posts/hello-world/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nezubn.com/posts/</loc>
-    <lastmod>2023-03-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nezubn.com/tags/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/categories/writing/</loc>

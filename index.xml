@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
-    <lastBuildDate>Fri, 03 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The AI Summer</title>
+      <link>https://nezubn.com/posts/the-ai-summer/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/posts/the-ai-summer/</guid>
+      <description>Meta LLaMA, Stanford Alpaca, PaLM, OpenAI GPT-4.
+This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent. Then Stanford released the Alpaca model fine tuned from the LLaMA 7B model on 52K instruction-following demonstrations.</description>
+    </item>
+    
     <item>
       <title>Hello, World</title>
       <link>https://nezubn.com/posts/hello-world/</link>
@@ -45,8 +55,7 @@ Dream Setup My Current Setup looks something like this. Hardware MacBook Pro 16&
       
       <guid>https://nezubn.com/bookshelf/</guid>
       <description>This will be interesting to some people, who want to read some great books and don&amp;rsquo;t know where to start from. I will try to have these books in physical form and I&amp;rsquo;ll keep updating this list as I read more books.
-If you got recommendations, feel free to drop a note!
-The books I have read and I recommend you should too Currently reading Bad Blood, John Carreyrou Deep Learning with Python: 2nd edition, François Chollet A Brief History of Time A man called Ove The Creactive Act Biographies &amp;amp; Start-up Stories Steve Jobs, Walter Isaacson Johan Cryuff My Turn Jony Ive: The Genius Behind Apple&amp;rsquo;s Greatest Products, Leander Kahney Shoe Dog: A Memoir by the creator of Nike, Phil Knight Hatching twitter No filter: The inside story of Instagram Creativity Inc.</description>
+If you got recommendations, feel free to drop a note!</description>
     </item>
     
     <item>
@@ -56,8 +65,7 @@ The books I have read and I recommend you should too Currently reading Bad Blood
       
       <guid>https://nezubn.com/about/</guid>
       <description>Hi, I am Ankit Sharma and I have been working in Machine Learning for almost ~3 years. I currently, work as an Software Engineer @Gramvaani. My interests range from reading non-fiction and sci-fi, study physics, machine learning and breaking and building on Apple platforms.
-Currently, I live in Noida, Uttar Pradesh but natively I am from Patna, Bihar.
-Public Profiles mastodon twitter stackoverflow linkedin hackernews reddit medium telegram instagram facebook </description>
+Currently, I live in Noida, Uttar Pradesh but natively I am from Patna, Bihar.</description>
     </item>
     
     <item>
@@ -67,8 +75,7 @@ Public Profiles mastodon twitter stackoverflow linkedin hackernews reddit medium
       
       <guid>https://nezubn.com/now/</guid>
       <description>What I am doing now? Work I am working as a Machine Learning Engineer in a startup, OnionDev Tech (Gramvaani). My work involves around writing Django Apps to training and deploying Machine Learning models.
-Previous project: To make a QnA System from unstructured data where a farmer can ask anything about his/her crops over an IVR system.
-Current project: Exploring climate conditions and effects of areas for growing crops using satellite images of places in UP and Bihar.</description>
+Previous project: To make a QnA System from unstructured data where a farmer can ask anything about his/her crops over an IVR system.</description>
     </item>
     
     <item>
