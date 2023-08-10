@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ankit</title>
+    <title>nezubn /nɛzʌb/</title>
     <link>https://nezubn.com/</link>
-    <description>Recent content on ankit</description>
+    <description>Recent content on nezubn /nɛzʌb/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
@@ -24,7 +24,7 @@
       
       <guid>https://nezubn.com/posts/the-ai-summer/</guid>
       <description>Meta LLaMA, Stanford Alpaca, PaLM, OpenAI GPT-4.
-This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent. Then Stanford released the Alpaca model fine tuned from the LLaMA 7B model on 52K instruction-following demonstrations.</description>
+This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent.</description>
     </item>
     
     <item>
@@ -53,8 +53,7 @@ This week has been crazy. The previous week started with the storming LLaMA rele
       
       <guid>https://nezubn.com/uses/</guid>
       <description>Hardware, services and tools I am using to get things done.
-Starting with my dream setup which I found on r/battlestations. I would like to have a similar setup in the coming years for me.
-Dream Setup My Current Setup looks something like this. Hardware MacBook Pro 16&amp;quot; Intel: Primary personal computer Lenovo IdeaPad: Work computer iPhone 13: Primary phone iPad Mini 5th generation Apple Watch SE AirPods Pro Apple Pencil 1st generation HomePod 1st generation Canon 700D DSLR Camera Software On Laptop Emacs: For coding and taking notes Org-mode and Org-roam: For making notes (Zettelkasten) Safari: My main browser Apple Pages: For anything related to document Apple Keynote: It&amp;rsquo;s the best software for making presentations Microsoft Excel: For anything related to data Microsoft VS Code: My other code editor Brave Browser: My occasional browser Craft: For saving everything on the go Things 3: For my project management Figma: For designing wallpapers Tweetbot: For browsing twitter Discord: For communities and their messages I never read Slack: For work Apple Music Xcode Apple Podcasts Photos iMessage Telegram On iPad Books Safari Netflix Onefootball On Phone Tweetbot: Twitter client app Apollo: For browsing Reddit Reeder: One of the best RSS app ever developed Github Social iMessage Telegram Signal WhatsApp LinkedIn: Every now and then Instagram: I have a Screen Time set for 20 minutes Apple Notes: For taking notes on the fly Craft: For saving any tweet/article that I might read later Things 3: For my project management Oak: My main meditation app Kite: For investing in Indian stock market Groww: To invest in Mutual Binance: To invest in crypto Apple Email: My personal email application Outlook: For my work email Apple Music Apple Podcasts </description>
+Starting with my dream setup which I found on r/battlestations.</description>
     </item>
     
     <item>
@@ -63,8 +62,7 @@ Dream Setup My Current Setup looks something like this. Hardware MacBook Pro 16&
       <pubDate>Mon, 21 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/bookshelf/</guid>
-      <description>This will be interesting to some people, who want to read some great books and don&amp;rsquo;t know where to start from. I will try to have these books in physical form and I&amp;rsquo;ll keep updating this list as I read more books.
-If you got recommendations, feel free to drop a note!</description>
+      <description>This will be interesting to some people, who want to read some great books and don&amp;rsquo;t know where to start from.</description>
     </item>
     
     <item>
@@ -73,8 +71,9 @@ If you got recommendations, feel free to drop a note!</description>
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/about/</guid>
-      <description>Hi, I am Ankit Sharma (Kumar) and I have been working in Machine Learning and Engineering for almost ~4 years.
-My interests range from reading non-fiction and sci-fi books, study physics, machine learning and deep learning algorithms, software internals, compilers, interpreters, programming languages, distributed systems, databases, networks and so on and also building and breaking on Apple platforms (iOS | macOS).</description>
+      <description>ipa nezubn /nɛzʌb/ &amp;mdash; no meaning, i made it up
+an engineer, and a polymath
+Hi there, I am Ankit aka (nezubn) and I have been working in Machine Learning and Engineering for almost ~4 years.</description>
     </item>
     
     <item>
@@ -83,8 +82,7 @@ My interests range from reading non-fiction and sci-fi books, study physics, mac
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/now/</guid>
-      <description>What I am doing now? Work I am working as a Machine Learning Engineer in a startup, OnionDev Tech (Gramvaani). My work involves around writing Django Apps to training and deploying Machine Learning models.
-Previous project: To make a QnA System from unstructured data where a farmer can ask anything about his/her crops over an IVR system.</description>
+      <description>What I am doing now? Work I am working as a Machine Learning Engineer in a startup, OnionDev Tech (Gramvaani). My work involves around writing Django Apps to training and deploying Machine Learning models.</description>
     </item>
     
     <item>
@@ -93,9 +91,7 @@ Previous project: To make a QnA System from unstructured data where a farmer can
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
       <guid>https://nezubn.com/people/</guid>
-      <description>
-Internet people who write about a variety of topics. I have tried to make this list of people sorted based on their expertise in their respective fields.
-Startups, Products &amp;amp; Strategy Balaji Srinivasan | balajis Paul Graham | paulg Aaron Swartz Vitalik Buterin | vitalikbuterin Naval | naval Software Engineering John Siracusa | siracusa Joel Spolsky | spolsky Machine Learning Andrej Karpathy | blog | karpathy Greg Brockman | gdb Yann LeCun | ylecun </description>
+      <description>Internet people who write about a variety of topics. I have tried to make this list of people sorted based on their expertise in their respective fields.</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ml on ankit</title>
+    <title>ml on nezubn /nɛzʌb/</title>
     <link>https://nezubn.com/categories/ml/</link>
-    <description>Recent content in ml on ankit</description>
+    <description>Recent content in ml on nezubn /nɛzʌb/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
@@ -15,7 +15,7 @@
       
       <guid>https://nezubn.com/posts/the-ai-summer/</guid>
       <description>Meta LLaMA, Stanford Alpaca, PaLM, OpenAI GPT-4.
-This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent. Then Stanford released the Alpaca model fine tuned from the LLaMA 7B model on 52K instruction-following demonstrations.</description>
+This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent.</description>
     </item>
     
   </channel>
