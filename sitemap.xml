@@ -2,64 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nezubn.com/papershelf/</loc>
+    <loc>/links/</loc>
+    <lastmod>2024-04-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/papershelf/</loc>
     <lastmod>2023-03-24T11:06:57+05:30</lastmod>
   </url><url>
-    <loc>https://nezubn.com/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/categories/dl/</loc>
+    <loc>/categories/dl/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/tags/llm/</loc>
+    <loc>/tags/llm/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/tags/ml/</loc>
+    <loc>/tags/ml/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/categories/ml/</loc>
+    <loc>/categories/ml/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/</loc>
+    <loc>/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/tags/nlp/</loc>
+    <loc>/tags/nlp/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/posts/the-ai-summer/</loc>
+    <loc>/posts/the-ai-summer/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/tags/hello/</loc>
+    <loc>/tags/hello/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/posts/hello-world/</loc>
+    <loc>/posts/hello-world/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/categories/writing/</loc>
+    <loc>/categories/writing/</loc>
     <lastmod>2023-03-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/til/</loc>
+    <loc>/til/</loc>
     <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/uses/</loc>
+    <loc>/uses/</loc>
     <lastmod>2022-02-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/bookshelf/</loc>
+    <loc>/bookshelf/</loc>
     <lastmod>2022-02-21T11:06:57+05:30</lastmod>
   </url><url>
-    <loc>https://nezubn.com/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2022-02-20T11:06:57+05:30</lastmod>
   </url><url>
-    <loc>https://nezubn.com/now/</loc>
+    <loc>/now/</loc>
     <lastmod>2022-02-20T11:06:57+05:30</lastmod>
   </url><url>
-    <loc>https://nezubn.com/people/</loc>
+    <loc>/people/</loc>
     <lastmod>2022-02-20T11:06:57+05:30</lastmod>
   </url>
 </urlset>
