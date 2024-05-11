@@ -2,14 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/find-research-papers/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/ml/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/papers/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/links/</loc>
     <lastmod>2024-04-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/papershelf/</loc>
     <lastmod>2023-03-24T11:06:57+05:30</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/dl/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
@@ -17,22 +35,10 @@
     <loc>/tags/llm/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/tags/ml/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/categories/ml/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/tags/nlp/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/the-ai-summer/</loc>
