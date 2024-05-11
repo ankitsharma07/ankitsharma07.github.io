@@ -6689,3 +6689,53 @@ div.subtitle.tags {
   border-left: 1px solid #eee;
   padding: .3rem 1.5rem;
 }
+
+
+/* Light theme styles */
+body.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+body.light-theme .container,
+body.light-theme .section,
+body.light-theme .nav,
+body.light-theme .footer {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+body.dark-theme .container,
+body.dark-theme .section,
+body.dark-theme .nav,
+body.dark-theme .footer {
+  background-color: #2e2e2e;
+  color: #fff;
+}
+
+#theme-toggle {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #2e2e2e;
+  border: none;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #eee;
+}
+
+body.dark-theme #theme-toggle {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-theme #theme-toggle:hover {
+  background-color: #444;
+}
