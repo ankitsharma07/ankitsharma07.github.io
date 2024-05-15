@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Posts | nezubn /nɛzʌb/</title>
+<title>DFS? | nezubn /nɛzʌb/</title>
 
-<meta property='og:title' content='Posts - nezubn /nɛzʌb/'>
-<meta property='og:description' content=''>
-<meta property='og:url' content='/posts/'>
+<meta property='og:title' content='DFS? - nezubn /nɛzʌb/'>
+<meta property='og:description' content='I have always struggled with Depth First Search, DFS. I now have started solving it using first principles and it has started to make sense.'>
+<meta property='og:url' content='/posts/dfs/'>
 <meta property='og:site_name' content='nezubn /nɛzʌb/'>
-<meta property='og:type' content='website'><meta property='og:image' content='https://images.unsplash.com/photo-1645471738497-3e45596a1100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3687&q=807864161ddde032d501b14ad5ef08e903?s=256'><meta property='article:section' content='Posts'><meta property='og:updated_time' content='2024-05-14T00:00:00Z'><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@nezubn'><meta name='twitter:creator' content='@nezubn'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://images.unsplash.com/photo-1645471738497-3e45596a1100?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3687&q=807864161ddde032d501b14ad5ef08e903?s=256'><meta property='article:author' content='https://facebook.com/nezubn'><meta property='article:section' content='Posts'><meta property='article:tag' content='algos'><meta property='article:published_time' content='2024-05-14T00:00:00Z'><meta property='article:modified_time' content='2024-05-14T00:00:00Z'><meta name='twitter:card' content='summary'><meta name='twitter:site' content='@nezubn'><meta name='twitter:creator' content='@nezubn'>
 
 
 <link href="/index.xml" rel="alternate" type="application/rss+xml" title="nezubn /nɛzʌb/">
@@ -20,7 +20,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="canonical" href="/posts/">
+<link rel="canonical" href="/posts/dfs/">
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
@@ -152,129 +152,93 @@
 
 <section class="section">
   <div class="container">
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
+    <div class="subtitle tags is-6 is-pulled-right">
+      
+      
 <a class="subtitle is-6" href="/tags/algos/">#algos</a>
 
 
 
 
-        
-      </div>
-      <h2 class="subtitle is-6 date">May 14, 2024</h2>
-      <h1 class="title"><a href="/posts/dfs/">DFS?</a></h1>
-      <div class="content">
-        I have always struggled with Depth First Search, DFS. I now have started solving it using first principles and it has started to make sense.
-        
-        <br>
-        <a class="is-link" href="/posts/dfs/" style="height:28px">
-            read more
-        </a>
-        
-        <hr>
-      </div>
-    </article>
+      
+    </div>
+    <h2 class="subtitle is-6">May 14, 2024</h2>
+    <h1 class="title">DFS?</h1>
+    <div>
+      1 minute to read · 207 words
+    </div>
     
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/ml/">#ml</a>
+    <br>
+    <div class="content">
+      <!doctype html>
 
 
+      <p>I have always struggled with Depth First Search, DFS. I now have started solving it using
+first principles and it has started to make sense.</p>
+<p>DFS can be solved using two methods:</p>
+<ol>
+<li>Recursive solution</li>
+<li>Iterative solution, using stacks</li>
+</ol>
+<p>To solve recursively we must keep few things in our mind:</p>
+<ul>
+<li>handle the base case, usually an empty tree (node == null)</li>
+<li>do some logic for the current node</li>
+<li>recursively call on the other node&rsquo;s children</li>
+<li>return the answer</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">// recursively
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">dfs</span>(TreeNode<span style="color:#f92672">*</span> node) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (node <span style="color:#f92672">==</span> <span style="color:#66d9ef">nullptr</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    dfs(node<span style="color:#f92672">-&gt;</span>left);
+</span></span><span style="display:flex;"><span>    dfs(node<span style="color:#f92672">-&gt;</span>right);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Each call to dfs(node) is visiting that node. As you can see in the code,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">//we visit the left child before visiting the right child.
+</span></span></span></code></pre></div><p>Example: <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/description/">104, Maximum Depth of a Binary Tree</a></p>
+<ul>
+<li>base case: root is null, then the max depth will be 0</li>
+<li>maxDepth(node.left) measures the maximum depth of the left subtree</li>
+<li>maxDepth(node.right) measures the maximum depth of the right subtree</li>
+<li>take the max of these and add 1 to it [as current node contributes 1 to the
+depth]</li>
+</ul>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> maxDepth(TreeNode<span style="color:#f92672">*</span> root) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (root <span style="color:#f92672">==</span> <span style="color:#66d9ef">nullptr</span>) {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> leftSubtree <span style="color:#f92672">=</span> maxDepth(root<span style="color:#f92672">-&gt;</span>left);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> rightSubtree <span style="color:#f92672">=</span> maxDepth(root<span style="color:#f92672">-&gt;</span>right);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">max</span>(leftSubtree, rightSubtree) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div>
+      
+      <div class="related">
 
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">May 11, 2024</h2>
-      <h1 class="title"><a href="/posts/find-research-papers/">How to find good research papers?</a></h1>
-      <div class="content">
-        There is plethora of research happening all around us and in the recent times the incoming number of research papers have increased by quite a number.
-        
-        <br>
-        <a class="is-link" href="/posts/find-research-papers/" style="height:28px">
-            read more
-        </a>
-        
-        <hr>
-      </div>
-    </article>
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/ml/">#ml</a>
-
-
-
-  
-  | <a class="subtitle is-6" href="/tags/llm/">#llm</a>
-  
-  | <a class="subtitle is-6" href="/tags/nlp/">#nlp</a>
-  
-
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">March 16, 2023</h2>
-      <h1 class="title"><a href="/posts/the-ai-summer/">The AI Summer</a></h1>
-      <div class="content">
-        Meta LLaMA, Stanford Alpaca, PaLM, OpenAI GPT-4.
-This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent.
-        
-        <br>
-        <a class="is-link" href="/posts/the-ai-summer/" style="height:28px">
-            read more
-        </a>
-        
-        <hr>
-      </div>
-    </article>
-    
-    <article>
-      <div class="subtitle tags is-6 is-pulled-right">
-        
-        
-<a class="subtitle is-6" href="/tags/hello/">#hello</a>
-
-
-
-
-        
-      </div>
-      <h2 class="subtitle is-6 date">March 3, 2023</h2>
-      <h1 class="title"><a href="/posts/hello-world/">Hello, World</a></h1>
-      <div class="content">
-        Hello, World
-#include &lt;iostream&gt; using namespace std; int main() { cout &lt;&lt; &#34;Hello, World!&#34; &lt;&lt; endl; return 0; } 
-        
-        <hr>
-      </div>
-    </article>
+</div>
+      
+    </div>
     
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <nav class="level is-mobile">
-      <div class="level-left">
-        <div class="level-item">
-          
-        </div>
-      </div>
-      <div class="level-right is-marginless">
-        <div class="level-item">
-          
-        </div>
-      </div>
-    </nav>
-  </div>
-</section>
+
+  <script src="/js/copycode.js"></script>
+
+
+
 
 <section class="section">
   <nav id="nav-main" class="nav">
@@ -377,10 +341,9 @@ This week has been crazy. The previous week started with the storming LLaMA rele
 </html>
 
 
-<style>
-  
- body.dark-theme article .title a {
-     color: #FBFBF9;
- }
-</style>
-
+  <style>
+    
+   body.dark-theme .related {
+     color: #fff;
+   }
+  </style>
