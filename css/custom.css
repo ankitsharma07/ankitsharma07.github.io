@@ -8,3 +8,53 @@
 .content h6 {
     color: #2078B2; // Custom Color
 }
+
+
+/* Light theme styles */
+body.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+body.light-theme .container,
+body.light-theme .section,
+body.light-theme .nav,
+body.light-theme .footer {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background-color: #0A0A0A;
+  color: #fff;
+}
+
+body.dark-theme .container,
+body.dark-theme .section,
+body.dark-theme .nav,
+body.dark-theme .footer {
+  background-color: #0A0A0A;
+  color: #fff;
+}
+
+#theme-toggle {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #0A0A0A;
+  border: none;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #eee;
+}
+
+body.dark-theme #theme-toggle {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-theme #theme-toggle:hover {
+  background-color: #444;
+}
