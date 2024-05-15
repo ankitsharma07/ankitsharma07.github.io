@@ -41,56 +41,116 @@ Hi there, I am Ankit aka (nezubn) and I have been working in Machine Learning an
       <div class="nav-right">
         <a href="https://nezubn.com/categories/" class="fill button is-rounded">categories</a>
         <a href="https://nezubn.com/tags/" class="button is-rounded padded-button">tags</a>
-        
+        <button id="theme-toggle" class="button is-rounded padded-button">night</button>
       </div>
-      <style>
-        .fill:hover,
-        .fill:focus {
-          box-shadow: inset 0 0 0 2em var(--hover);
-        }
-        .button:hover {
-          background-color: #111;
-          color: #fff;
-        }
-        .padded-button {
-          margin-left: 10px;
-        }
-        @media screen and (max-width: 768px) {
-          .nav-right {
-            display: flex;
-            justify-content: flex-start;
-            margin-top: 10px;
-          }
-          .nav-right .button {
-            margin-right: 5px;
-          }
-          .nav-right .button:last-child {
-            margin-right: 0;
-          }
-        }
-      </style>
     </nav>
     <nav class="nav">
       
-        <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
-                <h2 class="title is-5">posts</h2>
-              </a><a class="nav-item" href="https://nezubn.com/about/">
-                <h2 class="title is-5">about</h2>
-              </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
-                <h2 class="title is-5">bookshelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/links/">
-                <h2 class="title is-5">links</h2>
-              </a><a class="nav-item" href="https://nezubn.com/papershelf/">
-                <h2 class="title is-5">papershelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/til/">
-                <h2 class="title is-5">til</h2>
-              </a></div>
+      <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
+          <h2 class="title is-5">posts</h2>
+        </a><a class="nav-item" href="https://nezubn.com/about/">
+          <h2 class="title is-5">about</h2>
+        </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
+          <h2 class="title is-5">bookshelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/links/">
+          <h2 class="title is-5">links</h2>
+        </a><a class="nav-item" href="https://nezubn.com/papershelf/">
+          <h2 class="title is-5">papershelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/til/">
+          <h2 class="title is-5">til</h2>
+        </a></div>
       
       
     </nav>
   </div>
   <script src="/js/navicon-shift.js"></script>
 </section>
+<style>
+ .fill:hover,
+ .fill:focus {
+   box-shadow: inset 0 0 0 2em var(--hover);
+ }
+
+ .button:hover {
+   background-color: #111;
+   color: #fff;
+ }
+
+ .padded-button {
+   margin-left: 10px;
+ }
+
+ @media screen and (max-width: 768px) {
+   .nav-right {
+     display: flex;
+     justify-content: flex-start;
+     margin-top: 10px;
+   }
+
+   .nav-right .button {
+     margin-right: 5px;
+   }
+
+   .nav-right .button:last-child {
+     margin-right: 0;
+   }
+ }
+
+  
+ body.dark-theme .nav {
+   background-color: #0A0A0A;
+   color: #fff;
+ }
+
+ body.dark-theme .nav-item,
+ body.dark-theme .title {
+   color: #fff;
+ }
+
+ section.dark-theme .title {
+   color: #fff;
+ }
+
+ body.dark-theme .content .title {
+   color: #fff;
+ }
+
+ #theme-toggle {
+   background-color: #0e0c0a;
+   color: #fff;
+ }
+
+ body.dark-theme #theme-toggle {
+   background-color: #ffd800;
+   color: #000;
+ }
+</style>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+   const themeToggle = document.getElementById('theme-toggle');
+   const body = document.body;
+
+   
+   const savedTheme = localStorage.getItem('theme');
+   if (savedTheme === 'dark-theme') {
+     body.classList.add('dark-theme');
+     themeToggle.textContent = 'day';
+   }
+
+   
+   themeToggle.addEventListener('click', function() {
+     body.classList.toggle('dark-theme');
+     if (body.classList.contains('dark-theme')) {
+       themeToggle.textContent = 'day';
+       localStorage.setItem('theme', 'dark-theme');
+     } else {
+       themeToggle.textContent = 'night';
+       localStorage.setItem('theme', 'light-theme');
+     }
+   });
+ });
+</script>
+
 
 <section class="section">
   <div class="container">
@@ -100,15 +160,15 @@ Hi there, I am Ankit aka (nezubn) and I have been working in Machine Learning an
     <h2 class="subtitle is-6">February 20, 2022</h2>
     <h1 class="title">About</h1>
     <div>
-        2 minutes to read · 237 words
+      2 minutes to read · 237 words
     </div>
     
     <br>
     <div class="content">
-        <!doctype html>
+      <!doctype html>
 
 
-        <p>ipa nezubn /nɛzʌb/ &mdash; no meaning, i made it up<br>
+      <p>ipa nezubn /nɛzʌb/ &mdash; no meaning, i made it up<br>
 <em>an engineer, and a polymath</em></p>
 <p>Hi there, I am <strong>Ankit</strong> aka <em>(nezubn)</em> and I have been working in Machine Learning and Engineering for almost ~4 years. I like reading stuff, <strong>building things</strong>, designing. I live in emacs and my terminal [iTerm].</p>
 <p>My interests range from reading non-fiction and sci-fi books, <em>study</em> physics, machine learning and deep learning algorithms, software internals, compilers, interpreters, programming languages, distributed systems, databases, networks and so on and also building and breaking on Apple platforms (iOS | macOS).</p>
@@ -155,14 +215,17 @@ Hi there, I am Ankit aka (nezubn) and I have been working in Machine Learning an
 <li><a href="https://facebook.com/nezubn">facebook</a></li>
 </ul>
 
-        
-        <div class="related">
+      
+      <div class="related">
+
 </div>
       
     </div>
     
   </div>
 </section>
+
+
 
 
 
@@ -266,3 +329,10 @@ Hi there, I am Ankit aka (nezubn) and I have been working in Machine Learning an
 </body>
 </html>
 
+
+  <style>
+    
+   body.dark-theme .related {
+     color: #fff;
+   }
+  </style>

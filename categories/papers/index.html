@@ -39,87 +39,148 @@
       <div class="nav-right">
         <a href="https://nezubn.com/categories/" class="fill button is-rounded">categories</a>
         <a href="https://nezubn.com/tags/" class="button is-rounded padded-button">tags</a>
-        
+        <button id="theme-toggle" class="button is-rounded padded-button">night</button>
       </div>
-      <style>
-        .fill:hover,
-        .fill:focus {
-          box-shadow: inset 0 0 0 2em var(--hover);
-        }
-        .button:hover {
-          background-color: #111;
-          color: #fff;
-        }
-        .padded-button {
-          margin-left: 10px;
-        }
-        @media screen and (max-width: 768px) {
-          .nav-right {
-            display: flex;
-            justify-content: flex-start;
-            margin-top: 10px;
-          }
-          .nav-right .button {
-            margin-right: 5px;
-          }
-          .nav-right .button:last-child {
-            margin-right: 0;
-          }
-        }
-      </style>
     </nav>
     <nav class="nav">
       
-        <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
-                <h2 class="title is-5">posts</h2>
-              </a><a class="nav-item" href="https://nezubn.com/about/">
-                <h2 class="title is-5">about</h2>
-              </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
-                <h2 class="title is-5">bookshelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/links/">
-                <h2 class="title is-5">links</h2>
-              </a><a class="nav-item" href="https://nezubn.com/papershelf/">
-                <h2 class="title is-5">papershelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/til/">
-                <h2 class="title is-5">til</h2>
-              </a></div>
+      <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
+          <h2 class="title is-5">posts</h2>
+        </a><a class="nav-item" href="https://nezubn.com/about/">
+          <h2 class="title is-5">about</h2>
+        </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
+          <h2 class="title is-5">bookshelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/links/">
+          <h2 class="title is-5">links</h2>
+        </a><a class="nav-item" href="https://nezubn.com/papershelf/">
+          <h2 class="title is-5">papershelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/til/">
+          <h2 class="title is-5">til</h2>
+        </a></div>
       
       
     </nav>
   </div>
   <script src="/js/navicon-shift.js"></script>
 </section>
+<style>
+ .fill:hover,
+ .fill:focus {
+   box-shadow: inset 0 0 0 2em var(--hover);
+ }
+
+ .button:hover {
+   background-color: #111;
+   color: #fff;
+ }
+
+ .padded-button {
+   margin-left: 10px;
+ }
+
+ @media screen and (max-width: 768px) {
+   .nav-right {
+     display: flex;
+     justify-content: flex-start;
+     margin-top: 10px;
+   }
+
+   .nav-right .button {
+     margin-right: 5px;
+   }
+
+   .nav-right .button:last-child {
+     margin-right: 0;
+   }
+ }
+
+  
+ body.dark-theme .nav {
+   background-color: #0A0A0A;
+   color: #fff;
+ }
+
+ body.dark-theme .nav-item,
+ body.dark-theme .title {
+   color: #fff;
+ }
+
+ section.dark-theme .title {
+   color: #fff;
+ }
+
+ body.dark-theme .content .title {
+   color: #fff;
+ }
+
+ #theme-toggle {
+   background-color: #0e0c0a;
+   color: #fff;
+ }
+
+ body.dark-theme #theme-toggle {
+   background-color: #ffd800;
+   color: #000;
+ }
+</style>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+   const themeToggle = document.getElementById('theme-toggle');
+   const body = document.body;
+
+   
+   const savedTheme = localStorage.getItem('theme');
+   if (savedTheme === 'dark-theme') {
+     body.classList.add('dark-theme');
+     themeToggle.textContent = 'day';
+   }
+
+   
+   themeToggle.addEventListener('click', function() {
+     body.classList.toggle('dark-theme');
+     if (body.classList.contains('dark-theme')) {
+       themeToggle.textContent = 'day';
+       localStorage.setItem('theme', 'dark-theme');
+     } else {
+       themeToggle.textContent = 'night';
+       localStorage.setItem('theme', 'light-theme');
+     }
+   });
+ });
+</script>
+
 
 <section class="section">
-    <div class="container">
+  <div class="container">
+    
+    <article>
+      <div class="subtitle tags is-6 is-pulled-right">
         
-        <article>
-            <div class="subtitle tags is-6 is-pulled-right">
-                
-                
+        
 <a class="subtitle is-6" href="/tags/ml/">#ml</a>
 
 
 
 
-                
-            </div>
-            <h2 class="subtitle is-6 date">May 11, 2024</h2>
-            <h1 class="title"><a href="/posts/find-research-papers/">How to find good research papers?</a></h1>
-            <div class="content">
-                There is plethora of research happening all around us and in the recent times the incoming number of research papers have increased by quite a number.
-                
-                <br>
-                <a class="is-link" href="/posts/find-research-papers/" style="height:28px">
-                    read more
-                </a>
-                
-                <hr>
-            </div>
-        </article>
         
+      </div>
+      <h2 class="subtitle is-6 date">May 11, 2024</h2>
+      <h1 class="title"><a href="/posts/find-research-papers/">How to find good research papers?</a></h1>
+      <div class="content">
+        There is plethora of research happening all around us and in the recent times the incoming number of research papers have increased by quite a number.
+        
+        <br>
+        <a class="is-link" href="/posts/find-research-papers/" style="height:28px">
+            read more
+        </a>
+        
+        <hr>
+      </div>
+    </article>
+    
   </div>
 </section>
+
 <section class="section">
   <div class="container">
     <nav class="level is-mobile">
@@ -237,4 +298,11 @@
 </body>
 </html>
 
+
+<style>
+  
+ body.dark-theme article .title a {
+     color: #FBFBF9;
+ }
+</style>
 

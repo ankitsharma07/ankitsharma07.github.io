@@ -39,56 +39,116 @@
       <div class="nav-right">
         <a href="https://nezubn.com/categories/" class="fill button is-rounded">categories</a>
         <a href="https://nezubn.com/tags/" class="button is-rounded padded-button">tags</a>
-        
+        <button id="theme-toggle" class="button is-rounded padded-button">night</button>
       </div>
-      <style>
-        .fill:hover,
-        .fill:focus {
-          box-shadow: inset 0 0 0 2em var(--hover);
-        }
-        .button:hover {
-          background-color: #111;
-          color: #fff;
-        }
-        .padded-button {
-          margin-left: 10px;
-        }
-        @media screen and (max-width: 768px) {
-          .nav-right {
-            display: flex;
-            justify-content: flex-start;
-            margin-top: 10px;
-          }
-          .nav-right .button {
-            margin-right: 5px;
-          }
-          .nav-right .button:last-child {
-            margin-right: 0;
-          }
-        }
-      </style>
     </nav>
     <nav class="nav">
       
-        <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
-                <h2 class="title is-5">posts</h2>
-              </a><a class="nav-item" href="https://nezubn.com/about/">
-                <h2 class="title is-5">about</h2>
-              </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
-                <h2 class="title is-5">bookshelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/links/">
-                <h2 class="title is-5">links</h2>
-              </a><a class="nav-item" href="https://nezubn.com/papershelf/">
-                <h2 class="title is-5">papershelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/til/">
-                <h2 class="title is-5">til</h2>
-              </a></div>
+      <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
+          <h2 class="title is-5">posts</h2>
+        </a><a class="nav-item" href="https://nezubn.com/about/">
+          <h2 class="title is-5">about</h2>
+        </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
+          <h2 class="title is-5">bookshelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/links/">
+          <h2 class="title is-5">links</h2>
+        </a><a class="nav-item" href="https://nezubn.com/papershelf/">
+          <h2 class="title is-5">papershelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/til/">
+          <h2 class="title is-5">til</h2>
+        </a></div>
       
       
     </nav>
   </div>
   <script src="/js/navicon-shift.js"></script>
 </section>
+<style>
+ .fill:hover,
+ .fill:focus {
+   box-shadow: inset 0 0 0 2em var(--hover);
+ }
+
+ .button:hover {
+   background-color: #111;
+   color: #fff;
+ }
+
+ .padded-button {
+   margin-left: 10px;
+ }
+
+ @media screen and (max-width: 768px) {
+   .nav-right {
+     display: flex;
+     justify-content: flex-start;
+     margin-top: 10px;
+   }
+
+   .nav-right .button {
+     margin-right: 5px;
+   }
+
+   .nav-right .button:last-child {
+     margin-right: 0;
+   }
+ }
+
+  
+ body.dark-theme .nav {
+   background-color: #0A0A0A;
+   color: #fff;
+ }
+
+ body.dark-theme .nav-item,
+ body.dark-theme .title {
+   color: #fff;
+ }
+
+ section.dark-theme .title {
+   color: #fff;
+ }
+
+ body.dark-theme .content .title {
+   color: #fff;
+ }
+
+ #theme-toggle {
+   background-color: #0e0c0a;
+   color: #fff;
+ }
+
+ body.dark-theme #theme-toggle {
+   background-color: #ffd800;
+   color: #000;
+ }
+</style>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+   const themeToggle = document.getElementById('theme-toggle');
+   const body = document.body;
+
+   
+   const savedTheme = localStorage.getItem('theme');
+   if (savedTheme === 'dark-theme') {
+     body.classList.add('dark-theme');
+     themeToggle.textContent = 'day';
+   }
+
+   
+   themeToggle.addEventListener('click', function() {
+     body.classList.toggle('dark-theme');
+     if (body.classList.contains('dark-theme')) {
+       themeToggle.textContent = 'day';
+       localStorage.setItem('theme', 'dark-theme');
+     } else {
+       themeToggle.textContent = 'night';
+       localStorage.setItem('theme', 'light-theme');
+     }
+   });
+ });
+</script>
+
 
 <section class="section">
   <div class="container">
@@ -105,15 +165,15 @@
     <h2 class="subtitle is-6">May 11, 2024</h2>
     <h1 class="title">How to find good research papers?</h1>
     <div>
-        2 minutes to read · 221 words
+      2 minutes to read · 221 words
     </div>
     
     <br>
     <div class="content">
-        <!doctype html>
+      <!doctype html>
 
 
-        <p>There is plethora of research happening all around us and in the recent times
+      <p>There is plethora of research happening all around us and in the recent times
 the incoming number of research papers have increased by quite a number.</p>
 <p>This raises a question on how to find a good paper and give it a read.</p>
 <p>These are some of my techniques which I use to find good papers to read in the
@@ -146,8 +206,8 @@ great papers.</p>
 <p>I have started reading more papers as I progress through my learning and these
 are some of the best methods through which I find on what to read.</p>
 
-        
-        <div class="related">
+      
+      <div class="related">
 
 <h3>Similar articles:</h3>
 <ul>
@@ -155,12 +215,15 @@ are some of the best methods through which I find on what to read.</p>
 	<li><a href="/posts/the-ai-summer/">The AI Summer</a></li>
 	
 </ul>
+
 </div>
       
     </div>
     
   </div>
 </section>
+
+
 
 
 
@@ -264,3 +327,10 @@ are some of the best methods through which I find on what to read.</p>
 </body>
 </html>
 
+
+  <style>
+    
+   body.dark-theme .related {
+     color: #fff;
+   }
+  </style>

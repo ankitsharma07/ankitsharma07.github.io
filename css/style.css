@@ -6707,7 +6707,7 @@ body.light-theme .footer {
 
 /* Dark theme styles */
 body.dark-theme {
-  background-color: #2e2e2e;
+  background-color: #0A0A0A;
   color: #fff;
 }
 
@@ -6715,14 +6715,14 @@ body.dark-theme .container,
 body.dark-theme .section,
 body.dark-theme .nav,
 body.dark-theme .footer {
-  background-color: #2e2e2e;
+  background-color: #0A0A0A;
   color: #fff;
 }
 
 #theme-toggle {
   padding: 10px 20px;
   background-color: #fff;
-  color: #2e2e2e;
+  color: #0A0A0A;
   border: none;
   cursor: pointer;
 }

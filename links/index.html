@@ -40,56 +40,116 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
       <div class="nav-right">
         <a href="https://nezubn.com/categories/" class="fill button is-rounded">categories</a>
         <a href="https://nezubn.com/tags/" class="button is-rounded padded-button">tags</a>
-        
+        <button id="theme-toggle" class="button is-rounded padded-button">night</button>
       </div>
-      <style>
-        .fill:hover,
-        .fill:focus {
-          box-shadow: inset 0 0 0 2em var(--hover);
-        }
-        .button:hover {
-          background-color: #111;
-          color: #fff;
-        }
-        .padded-button {
-          margin-left: 10px;
-        }
-        @media screen and (max-width: 768px) {
-          .nav-right {
-            display: flex;
-            justify-content: flex-start;
-            margin-top: 10px;
-          }
-          .nav-right .button {
-            margin-right: 5px;
-          }
-          .nav-right .button:last-child {
-            margin-right: 0;
-          }
-        }
-      </style>
     </nav>
     <nav class="nav">
       
-        <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
-                <h2 class="title is-5">posts</h2>
-              </a><a class="nav-item" href="https://nezubn.com/about/">
-                <h2 class="title is-5">about</h2>
-              </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
-                <h2 class="title is-5">bookshelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/links/">
-                <h2 class="title is-5">links</h2>
-              </a><a class="nav-item" href="https://nezubn.com/papershelf/">
-                <h2 class="title is-5">papershelf</h2>
-              </a><a class="nav-item" href="https://nezubn.com/til/">
-                <h2 class="title is-5">til</h2>
-              </a></div>
+      <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
+          <h2 class="title is-5">posts</h2>
+        </a><a class="nav-item" href="https://nezubn.com/about/">
+          <h2 class="title is-5">about</h2>
+        </a><a class="nav-item" href="https://nezubn.com/bookshelf/">
+          <h2 class="title is-5">bookshelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/links/">
+          <h2 class="title is-5">links</h2>
+        </a><a class="nav-item" href="https://nezubn.com/papershelf/">
+          <h2 class="title is-5">papershelf</h2>
+        </a><a class="nav-item" href="https://nezubn.com/til/">
+          <h2 class="title is-5">til</h2>
+        </a></div>
       
       
     </nav>
   </div>
   <script src="/js/navicon-shift.js"></script>
 </section>
+<style>
+ .fill:hover,
+ .fill:focus {
+   box-shadow: inset 0 0 0 2em var(--hover);
+ }
+
+ .button:hover {
+   background-color: #111;
+   color: #fff;
+ }
+
+ .padded-button {
+   margin-left: 10px;
+ }
+
+ @media screen and (max-width: 768px) {
+   .nav-right {
+     display: flex;
+     justify-content: flex-start;
+     margin-top: 10px;
+   }
+
+   .nav-right .button {
+     margin-right: 5px;
+   }
+
+   .nav-right .button:last-child {
+     margin-right: 0;
+   }
+ }
+
+  
+ body.dark-theme .nav {
+   background-color: #0A0A0A;
+   color: #fff;
+ }
+
+ body.dark-theme .nav-item,
+ body.dark-theme .title {
+   color: #fff;
+ }
+
+ section.dark-theme .title {
+   color: #fff;
+ }
+
+ body.dark-theme .content .title {
+   color: #fff;
+ }
+
+ #theme-toggle {
+   background-color: #0e0c0a;
+   color: #fff;
+ }
+
+ body.dark-theme #theme-toggle {
+   background-color: #ffd800;
+   color: #000;
+ }
+</style>
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+   const themeToggle = document.getElementById('theme-toggle');
+   const body = document.body;
+
+   
+   const savedTheme = localStorage.getItem('theme');
+   if (savedTheme === 'dark-theme') {
+     body.classList.add('dark-theme');
+     themeToggle.textContent = 'day';
+   }
+
+   
+   themeToggle.addEventListener('click', function() {
+     body.classList.toggle('dark-theme');
+     if (body.classList.contains('dark-theme')) {
+       themeToggle.textContent = 'day';
+       localStorage.setItem('theme', 'dark-theme');
+     } else {
+       themeToggle.textContent = 'night';
+       localStorage.setItem('theme', 'light-theme');
+     }
+   });
+ });
+</script>
+
 
 <section class="section">
   <div class="container">
@@ -99,15 +159,15 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
     <h2 class="subtitle is-6">April 12, 2024</h2>
     <h1 class="title">Links</h1>
     <div>
-        1 minute to read · 84 words
+      1 minute to read · 84 words
     </div>
     
     <br>
     <div class="content">
-        <!doctype html>
+      <!doctype html>
 
 
-        <p>My favorite links to some of the good posts i have read around the internet.</p>
+      <p>My favorite links to some of the good posts i have read around the internet.</p>
 <h1 id="my-links">My links</h1>
 <ul>
 <li><a href="https://docs.google.com/document/d/e/2PACX-1vSKcvlJErnzqSLO5jdOr7mQMhW4KOxrWJ_u0ax5dn8dah5MI_kvVRTf2s3ln4Q_j87xCrxHA27i3BSX/pub">keeping up with ai</a></li>
@@ -143,14 +203,17 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
 <li><a href="http://yann.lecun.com">Yann LeCun</a> | <a href="https://twitter.com/ylecun">ylecun</a></li>
 </ul>
 
-        
-        <div class="related">
+      
+      <div class="related">
+
 </div>
       
     </div>
     
   </div>
 </section>
+
+
 
 
 
@@ -254,3 +317,10 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
 </body>
 </html>
 
+
+  <style>
+    
+   body.dark-theme .related {
+     color: #fff;
+   }
+  </style>
