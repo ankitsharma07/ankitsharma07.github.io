@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on nezubn /nɛzʌb/</title>
-    <link>/categories/</link>
+    <link>https://nezubn.com/categories/</link>
     <description>Recent content in Categories on nezubn /nɛzʌb/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
-    <lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
+    <lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>papers</title>
-      <link>/categories/papers/</link>
+      <link>https://nezubn.com/categories/papers/</link>
       <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>/categories/papers/</guid>
+      <guid>https://nezubn.com/categories/papers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dl</title>
-      <link>/categories/dl/</link>
+      <link>https://nezubn.com/categories/dl/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/categories/dl/</guid>
+      <guid>https://nezubn.com/categories/dl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ml</title>
-      <link>/categories/ml/</link>
+      <link>https://nezubn.com/categories/ml/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/categories/ml/</guid>
+      <guid>https://nezubn.com/categories/ml/</guid>
       <description></description>
     </item>
     
     <item>
       <title>writing</title>
-      <link>/categories/writing/</link>
+      <link>https://nezubn.com/categories/writing/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/categories/writing/</guid>
+      <guid>https://nezubn.com/categories/writing/</guid>
       <description></description>
     </item>
     

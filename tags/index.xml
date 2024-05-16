@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on nezubn /nɛzʌb/</title>
-    <link>/tags/</link>
+    <link>https://nezubn.com/tags/</link>
     <description>Recent content in Tags on nezubn /nɛzʌb/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
-    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
+    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>algos</title>
-      <link>/tags/algos/</link>
+      <link>https://nezubn.com/tags/algos/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>/tags/algos/</guid>
+      <guid>https://nezubn.com/tags/algos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ml</title>
-      <link>/tags/ml/</link>
+      <link>https://nezubn.com/tags/ml/</link>
       <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ml/</guid>
+      <guid>https://nezubn.com/tags/ml/</guid>
       <description></description>
     </item>
     
     <item>
       <title>llm</title>
-      <link>/tags/llm/</link>
+      <link>https://nezubn.com/tags/llm/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/llm/</guid>
+      <guid>https://nezubn.com/tags/llm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>nlp</title>
-      <link>/tags/nlp/</link>
+      <link>https://nezubn.com/tags/nlp/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/nlp/</guid>
+      <guid>https://nezubn.com/tags/nlp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hello</title>
-      <link>/tags/hello/</link>
+      <link>https://nezubn.com/tags/hello/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hello/</guid>
+      <guid>https://nezubn.com/tags/hello/</guid>
       <description></description>
     </item>
     

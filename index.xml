@@ -2,103 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>nezubn /nɛzʌb/</title>
-    <link>/</link>
+    <link>https://nezubn.com/</link>
     <description>Recent content on nezubn /nɛzʌb/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
-    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
+    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DFS?</title>
-      <link>/posts/dfs/</link>
+      <link>https://nezubn.com/posts/dfs/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/dfs/</guid>
+      <guid>https://nezubn.com/posts/dfs/</guid>
       <description>I have always struggled with Depth First Search, DFS. I now have started solving it using first principles and it has started to make sense.</description>
     </item>
     
     <item>
       <title>How to find good research papers?</title>
-      <link>/posts/find-research-papers/</link>
+      <link>https://nezubn.com/posts/find-research-papers/</link>
       <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/find-research-papers/</guid>
+      <guid>https://nezubn.com/posts/find-research-papers/</guid>
       <description>There is plethora of research happening all around us and in the recent times the incoming number of research papers have increased by quite a number.</description>
     </item>
     
     <item>
       <title>Links</title>
-      <link>/links/</link>
+      <link>https://nezubn.com/links/</link>
       <pubDate>Fri, 12 Apr 2024 00:00:00 +0000</pubDate>
       
-      <guid>/links/</guid>
+      <guid>https://nezubn.com/links/</guid>
       <description>My favorite links to some of the good posts i have read around the internet.
 My links keeping up with ai Favorite links teach yourself programming in 10 years Patrick Collision | patrickc</description>
     </item>
     
     <item>
       <title>Papers</title>
-      <link>/papershelf/</link>
+      <link>https://nezubn.com/papershelf/</link>
       <pubDate>Fri, 24 Mar 2023 11:06:57 +0530</pubDate>
       
-      <guid>/papershelf/</guid>
+      <guid>https://nezubn.com/papershelf/</guid>
       <description>The papers I am reading and I recommend. The list contains papers extensively from the fields of Physics, Machine Learning / Deep Learning and Software Engineering.</description>
     </item>
     
     <item>
       <title>The AI Summer</title>
-      <link>/posts/the-ai-summer/</link>
+      <link>https://nezubn.com/posts/the-ai-summer/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/the-ai-summer/</guid>
+      <guid>https://nezubn.com/posts/the-ai-summer/</guid>
       <description>Meta LLaMA, Stanford Alpaca, PaLM, OpenAI GPT-4.
 This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent.</description>
     </item>
     
     <item>
       <title>Hello, World</title>
-      <link>/posts/hello-world/</link>
+      <link>https://nezubn.com/posts/hello-world/</link>
       <pubDate>Fri, 03 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/hello-world/</guid>
+      <guid>https://nezubn.com/posts/hello-world/</guid>
       <description>Hello, World
 #include &amp;lt;iostream&amp;gt; using namespace std; int main() { cout &amp;lt;&amp;lt; &amp;#34;Hello, World!&amp;#34; &amp;lt;&amp;lt; endl; return 0; } </description>
     </item>
     
     <item>
       <title>Today I Learned</title>
-      <link>/til/</link>
+      <link>https://nezubn.com/til/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/til/</guid>
+      <guid>https://nezubn.com/til/</guid>
       <description>Whatever I end up learning on my day to day exploration. If it seem interesting to me I will share it as a post here.</description>
     </item>
     
     <item>
       <title>Uses this</title>
-      <link>/uses/</link>
+      <link>https://nezubn.com/uses/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/uses/</guid>
+      <guid>https://nezubn.com/uses/</guid>
       <description>Hardware, services and tools I am using to get things done.
 Starting with my dream setup which I found on r/battlestations.</description>
     </item>
     
     <item>
       <title>Bookshelf</title>
-      <link>/bookshelf/</link>
+      <link>https://nezubn.com/bookshelf/</link>
       <pubDate>Mon, 21 Feb 2022 11:06:57 +0530</pubDate>
       
-      <guid>/bookshelf/</guid>
+      <guid>https://nezubn.com/bookshelf/</guid>
       <description>This will be interesting to some people, who want to read some great books and don&amp;rsquo;t know where to start from.</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://nezubn.com/about/</link>
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://nezubn.com/about/</guid>
       <description>ipa nezubn /nɛzʌb/ &amp;mdash; no meaning, i made it up
 an engineer, and a polymath
 Hi there, I am Ankit aka (nezubn) and I have been working in Machine Learning and Engineering for almost ~4 years.</description>
@@ -106,19 +106,19 @@ Hi there, I am Ankit aka (nezubn) and I have been working in Machine Learning an
     
     <item>
       <title>Now</title>
-      <link>/now/</link>
+      <link>https://nezubn.com/now/</link>
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
-      <guid>/now/</guid>
+      <guid>https://nezubn.com/now/</guid>
       <description>What I am doing now? Work I am working as a Machine Learning Engineer in a startup, OnionDev Tech (Gramvaani). My work involves around writing Django Apps to training and deploying Machine Learning models.</description>
     </item>
     
     <item>
       <title>People</title>
-      <link>/people/</link>
+      <link>https://nezubn.com/people/</link>
       <pubDate>Sun, 20 Feb 2022 11:06:57 +0530</pubDate>
       
-      <guid>/people/</guid>
+      <guid>https://nezubn.com/people/</guid>
       <description>Internet people who write about a variety of topics. I have tried to make this list of people sorted based on their expertise in their respective fields.</description>
     </item>
     

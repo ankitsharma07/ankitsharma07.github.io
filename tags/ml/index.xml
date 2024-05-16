@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ml on nezubn /nɛzʌb/</title>
-    <link>/tags/ml/</link>
+    <link>https://nezubn.com/tags/ml/</link>
     <description>Recent content in ml on nezubn /nɛzʌb/</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2023</copyright>
-    <lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
+    <lastBuildDate>Sat, 11 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/tags/ml/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to find good research papers?</title>
-      <link>/posts/find-research-papers/</link>
+      <link>https://nezubn.com/posts/find-research-papers/</link>
       <pubDate>Sat, 11 May 2024 00:00:00 +0000</pubDate>
       
-      <guid>/posts/find-research-papers/</guid>
+      <guid>https://nezubn.com/posts/find-research-papers/</guid>
       <description>There is plethora of research happening all around us and in the recent times the incoming number of research papers have increased by quite a number.</description>
     </item>
     
     <item>
       <title>The AI Summer</title>
-      <link>/posts/the-ai-summer/</link>
+      <link>https://nezubn.com/posts/the-ai-summer/</link>
       <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/the-ai-summer/</guid>
+      <guid>https://nezubn.com/posts/the-ai-summer/</guid>
       <description>Meta LLaMA, Stanford Alpaca, PaLM, OpenAI GPT-4.
 This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent.</description>
     </item>
