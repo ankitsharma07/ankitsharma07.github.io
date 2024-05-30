@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
-    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Create new Google Doc from the search bar</title>
+      <link>https://nezubn.com/posts/gdoc/</link>
+      <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/posts/gdoc/</guid>
+      <description>TIL, you can create new doc, sheet, slide, form, site or a calendar event from the search bar at the top of the Chrome.</description>
+    </item>
+    
     <item>
       <title>DFS?</title>
       <link>https://nezubn.com/posts/dfs/</link>

@@ -2,23 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nezubn.com/categories/</loc>
+    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/posts/gdoc/</loc>
+    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/</loc>
+    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/posts/</loc>
+    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nezubn.com/categories/til/</loc>
+    <lastmod>2024-05-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nezubn.com/tags/algos/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/posts/dfs/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/</loc>
-    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nezubn.com/posts/</loc>
-    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nezubn.com/tags/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nezubn.com/categories/</loc>
-    <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/posts/find-research-papers/</loc>
     <lastmod>2024-05-11T00:00:00+00:00</lastmod>
