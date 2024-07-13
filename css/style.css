@@ -1369,7 +1369,10 @@ a.box:active {
 }
 
 .content p {
-  text-align: justify;
+  font-family: "adobe-garamond-pro";
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
 }
 
 .content blockquote:not(:last-child),
@@ -1385,6 +1388,9 @@ a.box:active {
 .content h4,
 .content h5,
 .content h6 {
+  font-family: "adobe-garamond-pro";
+  font-weight: 600;
+  font-style: normal;
   color: #b52323;
   font-weight: 300;
   margin-bottom: 20px;
@@ -2462,7 +2468,9 @@ a.box:active {
 
 .subtitle,
 .title {
-  font-weight: 300;
+  font-family: "adobe-garamond-pro";
+  font-weight: 500;
+  font-style: normal;
   word-break: break-word;
 }
 
@@ -2470,7 +2478,18 @@ a.box:active {
 .subtitle span,
 .title em,
 .title span {
-  font-weight: 300;
+  font-family: "adobe-garamond-pro";
+  font-weight: 400;
+  font-style: italic;
+}
+
+.subtitle em,
+.subtitle span,
+.title em,
+.title span {
+  font-family: "adobe-garamond-pro";
+  font-weight: 400;
+  font-style: italic;
 }
 
 .subtitle a:hover,
@@ -2480,7 +2499,9 @@ a.box:active {
 
 .subtitle strong,
 .title strong {
-  font-weight: 500;
+  font-family: "adobe-garamond-pro";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .subtitle .tag,
@@ -4191,6 +4212,9 @@ a.box:active {
 
 .nav-left,
 .tile {
+  font-family: "adobe-garamond-pro";
+  font-weight: 500;
+  font-style: normal;
   -webkit-box-align: stretch;
 }
 
@@ -5024,6 +5048,9 @@ a.nav-item.is-tab.is-active {
 
 @media screen and (min-width: 769px) {
   .nav-right {
+    font-family: "adobe-garamond-pro";
+    font-weight: 500;
+    font-style: normal;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
@@ -6475,7 +6502,10 @@ article+article {
 }
 
 .content {
-  font-size: 16px;
+  font-family: "adobe-garamond-pro";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
   line-height: 1.75;
 }
 
@@ -6494,6 +6524,9 @@ article+article {
 .content h5,
 .content h6,
 .title {
+  font-family: "adobe-garamond-pro";
+  font-weight: 500;
+  font-style: normal;
   line-height: 1.25;
 }
 
@@ -6506,10 +6539,16 @@ article+article {
 }
 
 .subtitle {
+  font-family: "adobe-garamond-pro";
+  font-weight: 500;
+  font-style: normal;
   color: #69707a;
 }
 
 .title {
+  font-family: "adobe-garamond-pro";
+  font-weight: 500;
+  font-style: normal;
   font-size: 24px;
 }
 
@@ -6532,8 +6571,10 @@ code {
 .content h4::before,
 .content h5::before,
 .content h6::before {
+  font-family: "adobe-garamond-pro";
+  font-weight: 500;
+  font-style: normal;
   color: #aeb1b5;
-  font-weight: 700;
 }
 
 .content h1 code,
@@ -6708,7 +6749,7 @@ body.light-theme .footer {
 /* Dark theme styles */
 body.dark-theme {
   background-color: #0A0A0A;
-  color: #fff;
+  color: #BBB5AC;
 }
 
 body.dark-theme .container,
@@ -6716,10 +6757,13 @@ body.dark-theme .section,
 body.dark-theme .nav,
 body.dark-theme .footer {
   background-color: #0A0A0A;
-  color: #fff;
+  color: #BBB5AC;
 }
 
 #theme-toggle {
+  font-family: "adobe-garamond-pro";
+  font-weight: 500;
+  font-style: normal;
   padding: 10px 20px;
   background-color: #fff;
   color: #0A0A0A;
