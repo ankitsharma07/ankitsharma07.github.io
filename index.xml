@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nezubn /nɛzʌb/</title>
+    <title>Ankit Sharma</title>
     <link>https://nezubn.com/</link>
-    <description>Recent content on nezubn /nɛzʌb/</description>
+    <description>Recent content on Ankit Sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
     <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Thoughts</title>
+      <link>https://nezubn.com/thoughts/</link>
+      <pubDate>Sat, 13 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/thoughts/</guid>
+      <description>2024 </description>
+    </item>
+    
     <item>
       <title>Create new Google Doc from the search bar</title>
       <link>https://nezubn.com/posts/gdoc/</link>
