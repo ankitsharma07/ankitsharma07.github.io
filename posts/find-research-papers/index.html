@@ -41,9 +41,18 @@
         </a>
       </div>
       <div class="nav-right">
-        <a href="https://nezubn.com/categories/" class="fill button is-rounded">categories</a>
-        <a href="https://nezubn.com/tags/" class="button is-rounded padded-button">tags</a>
-        <button id="theme-toggle" class="button is-rounded padded-button">night</button>
+        <a href="https://nezubn.com/categories/" class="fill button is-rounded">
+          <i class="fas fa-folder-open"></i>
+          <span>categories</span>
+        </a>
+        <a href="https://nezubn.com/tags/" class="button is-rounded padded-button">
+          <i class="fas fa-tags"></i>
+          <span>tags</span>
+        </a>
+        <button id="theme-toggle" class="button is-rounded padded-button">
+          <i class="fas fa-moon"></i>
+          <span>night</span>
+        </button>
       </div>
     </nav>
     <nav class="nav">
@@ -67,56 +76,45 @@
   </div>
   <script src="/js/navicon-shift.js"></script>
 </section>
+
 <style>
  .fill:hover,
  .fill:focus {
      box-shadow: inset 0 0 0 2em var(--hover);
  }
-
  .button:hover {
      background-color: #111;
      color: #fff;
  }
-
  .padded-button {
      margin-left: 10px;
  }
-
+ .button i {
+     margin-right: 5px;
+ }
  @media screen and (max-width: 768px) {
      .nav-right {
          display: flex;
          justify-content: flex-start;
          margin-top: 10px;
      }
-
      .nav-right .button {
          margin-right: 5px;
      }
-
      .nav-right .button:last-child {
          margin-right: 0;
      }
  }
-
-  
- body.dark-theme .nav {
-     background-color: #0A0A0A;
-     color: #fff;
- }
-
  body.dark-theme .nav-item,
  body.dark-theme .title {
-     color: #fff;
+     color: #D2CEC8;
  }
-
  section.dark-theme .title {
-     color: #fff;
+     color: #D2CEC8;
  }
-
  body.dark-theme .content .title {
-     color: #fff;
+     color: #D2CEC8;
  }
-
  #theme-toggle::before {
      content: '';
      position: absolute;
@@ -128,26 +126,21 @@
      opacity: 0;
      transition: opacity 0.2s;
  }
-
  body.dark-theme #theme-toggle::before {
      background-color: #2E2E2E;
  }
-
  #theme-toggle:active::before {
      opacity: 1;
  }
-
  #theme-toggle {
      background-color: #2E2E2E;
      color: white;
      transition: background-color 0.1s, color 0.1s;
  }
-
  body.dark-theme #theme-toggle {
      background-color: #2E2E2E;
      color: white;
  }
-
  #theme-toggle:hover,
  #theme-toggle:focus,
  #theme-toggle:active {
@@ -156,26 +149,35 @@
      border: none;
  }
 </style>
+
 <script>
  document.addEventListener('DOMContentLoaded', function() {
      const themeToggle = document.getElementById('theme-toggle');
+     const themeIcon = themeToggle.querySelector('i');
+     const themeText = themeToggle.querySelector('span');
      const body = document.body;
 
      
      const savedTheme = localStorage.getItem('theme');
      if (savedTheme === 'dark-theme') {
          body.classList.add('dark-theme');
-         themeToggle.textContent = 'day';
+         themeIcon.classList.remove('fa-moon');
+         themeIcon.classList.add('fa-sun');
+         themeText.textContent = 'day';
      }
 
      
      themeToggle.addEventListener('click', function() {
          body.classList.toggle('dark-theme');
          if (body.classList.contains('dark-theme')) {
-             themeToggle.textContent = 'day';
+             themeIcon.classList.remove('fa-moon');
+             themeIcon.classList.add('fa-sun');
+             themeText.textContent = 'day';
              localStorage.setItem('theme', 'dark-theme');
          } else {
-             themeToggle.textContent = 'night';
+             themeIcon.classList.remove('fa-sun');
+             themeIcon.classList.add('fa-moon');
+             themeText.textContent = 'night';
              localStorage.setItem('theme', 'light-theme');
          }
      });
@@ -317,31 +319,68 @@ are some of the best methods through which I find on what to read.</p>
 </html>
 
 
-  <style>
-    
-   body.dark-theme .related a {
-     color: #fff;
-   }
+    <style>
+      
+     body.dark-theme .related a,
+     body.dark-theme .content a {
+         color: #4a9eff !important;  
+         text-decoration: none;
+         position: relative;
+         display: inline-block;
+     }
 
-   body.dark-theme .content {
-     color: #D8D8D8;
-   }
+     body.dark-theme .related a::after,
+     body.dark-theme .content a::after {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         bottom: -2px;
+         left: 0;
+         background-color: #ffffff;
+         visibility: hidden;
+         transform: scaleX(0);
+         transition: all 0.3s ease-in-out 0s;
+     }
 
+     body.dark-theme .related a:hover,
+     body.dark-theme .content a:hover {
+         color: #ffffff;
+     }
 
-   body.dark-theme .is-link {
-     border-bottom-color: #585858;
-   }
+     body.dark-theme .related a:hover::after,
+     body.dark-theme .content a:hover::after {
+         visibility: visible;
+         transform: scaleX(1);
+     }
 
-   body.dark-theme .is-link:hover {
-     color: #fff;
-   }
+     body.dark-theme .related,
+     body.dark-theme .related *,
+     body.dark-theme .related h3,
+     body.dark-theme .related h4,
+     body.dark-theme .related h5,
+     body.dark-theme .related h6,
+     body.dark-theme .related p,
+     body.dark-theme .related li {
+         color: #ffffff;
+     }
 
-   body.dark-theme .content hr {
-     background-color: #2E2E2E;
-     border: none;
-     height: 0.5px;
-   }
+     body.dark-theme .content {
+         color: #D2CEC8;
+     }
 
+     body.dark-theme .is-link {
+         border-bottom: none;
+     }
 
+     body.dark-theme .is-link:hover {
+         color: #ffffff;
+     }
 
-  </style>
+     body.dark-theme hr,
+     body.dark-theme .content hr {
+         background-color: #2E2E2E;
+         border: none;
+         height: 0.5px;
+     }
+    </style>

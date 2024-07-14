@@ -170,6 +170,7 @@ td img {
 
 pre,
 pre code {
+  font-size: 16px;
   background-color: #f5f7fa;
   color: #42464c;
 }
@@ -1373,6 +1374,7 @@ a.box:active {
   font-weight: 400;
   font-style: normal;
   text-align: left;
+  line-height: 1.3;
 }
 
 .content blockquote:not(:last-child),
@@ -6720,17 +6722,13 @@ div.subtitle.tags {
   margin: 0;
 }
 
-
 .section-nav-toc {
-  /* position: -webkit-sticky; */
-  /* position: sticky; */
   top: 4rem;
   transition: top 0.2s ease-in-out;
   animation: fade-up 0.8s;
   border-left: 1px solid #eee;
   padding: .3rem 1.5rem;
 }
-
 
 /* Light theme styles */
 body.light-theme {
@@ -6748,15 +6746,24 @@ body.light-theme .footer {
 
 /* Dark theme styles */
 body.dark-theme {
-  background-color: #0A0A0A;
+  background-color: #111517;
   color: #BBB5AC;
 }
 
 body.dark-theme .container,
 body.dark-theme .section,
-body.dark-theme .nav,
+body.dark-theme .nav-left,
+body.dark-theme .nav-right,
+/* body.dark-theme .nav-center, */
+body.dark-theme #nav-main.nav,
 body.dark-theme .footer {
-  background-color: #0A0A0A;
+  background-color: #111517;
+  color: #BBB5AC;
+}
+
+/* Ensure the container class has the same styles in dark theme */
+body.dark-theme .container {
+  background-color: #111517;
   color: #BBB5AC;
 }
 
