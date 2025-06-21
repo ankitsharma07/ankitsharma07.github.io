@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tutorial on nezubn</title>
+    <title>tutorial on ankit sharma</title>
     <link>https://nezubn.com/tags/tutorial/</link>
-    <description>Recent content in tutorial on nezubn</description>
+    <description>Recent content in tutorial on ankit sharma</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2022</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
     <lastBuildDate>Mon, 21 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I configured my blog?</title>
@@ -14,7 +14,7 @@
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://nezubn.com/posts/blogging-with-github-pages-and-emacs-in-2022/</guid>
-      <description>Configuring Hugo and Github Pages Publishing from Org-mode  References </description>
+      <description>Configuring Hugo and Github Pages Publishing from Org-mode References </description>
     </item>
     
   </channel>
