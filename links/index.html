@@ -51,23 +51,15 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
           <i class="fas fa-tags"></i>
           <span>tags</span>
         </a>
-        <button id="theme-toggle" class="button is-rounded padded-button">
-          <i class="fas fa-moon"></i>
-          <span>night</span>
-        </button>
 
-
-        
         <button id="search-toggle" class="button is-rounded padded-button">
           <i class="fas fa-search"></i>
           <span>search</span>
         </button>
 
         
-        
 <div id="search-modal" class="search-modal">
     <div class="search-modal-content" id="pagefind-modal">
-      <button id="search-close" class="search-close">&times;</button>
       
     </div>
   </div>
@@ -90,7 +82,6 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
       const close = () => M.classList.remove('open');
   
       document.getElementById('search-toggle')?.addEventListener('click', open);
-      document.getElementById('search-close').addEventListener('click', close);
       M.addEventListener('click', e => { if (e.target === M) close(); });
       document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     });
@@ -101,14 +92,20 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
   .search-modal {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     display: none;
-    align-items: center;           
-    justify-content: center;       
-    z-index: 10000;               
-    backdrop-filter: blur(2px);    
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;               
+    backdrop-filter: blur(3px);
+    isolation: isolate;            
   }
   .search-modal.open { display: flex; }
+  
+   
+  .search-modal.open ~ * {
+    pointer-events: none;
+  }
   
    
   .search-modal-content {
@@ -118,8 +115,9 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
     background: var(--body-bg, #fff);
     border-radius: 16px;
     padding: 2rem;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    pointer-events: all;           
   }
   body.dark-theme .search-modal-content {
     background: #2E2E2E;
@@ -127,34 +125,9 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
   }
   
    
-  .search-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: transparent;
-    border: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: currentColor;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition: background-color 0.2s;
-  }
-  .search-close:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  body.dark-theme .search-close:hover {
-    background: rgba(255, 255, 255, 0.1);
-  }
-  
-   
   .pagefind-ui__search-input {
     width: 100% !important;
-    padding: 1rem 3rem 1rem 1rem !important;   
+    padding: 1rem 3rem 1rem 1rem !important;
     border: 2px solid #e0e0e0 !important;
     border-radius: 12px !important;
     font-size: 1.2rem !important;
@@ -201,6 +174,11 @@ My links keeping up with ai Favorite links teach yourself programming in 10 year
     position: relative !important;
   }
   </style>
+
+        <button id="theme-toggle" class="button is-rounded padded-button">
+          <i class="fas fa-moon"></i>
+          <span>night</span>
+        </button>
 
 
       </div>
