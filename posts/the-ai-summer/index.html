@@ -43,7 +43,7 @@ This week has been crazy. The previous week started with the storming LLaMA rele
         </a>
       </div>
       <div class="nav-right">
-        <a href="https://nezubn.com/categories/" class="fill button is-rounded">
+        <a href="https://nezubn.com/categories/" class="button is-rounded padded-button">
           <i class="fas fa-folder-open"></i>
           <span>categories</span>
         </a>
@@ -57,7 +57,17 @@ This week has been crazy. The previous week started with the storming LLaMA rele
           <span>search</span>
         </button>
 
-        
+
+        <button id="theme-toggle" class="button is-rounded padded-button">
+          <i class="fas fa-moon"></i>
+          <span>night</span>
+        </button>
+
+
+      </div>
+    </nav>
+
+    
 <div id="search-modal" class="search-modal">
     <div class="search-modal-content" id="pagefind-modal">
       
@@ -88,26 +98,22 @@ This week has been crazy. The previous week started with the storming LLaMA rele
   </script>
   
   <style>
-   
   .search-modal {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     display: none;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 20vh;
     justify-content: center;
-    z-index: 999999;               
-    backdrop-filter: blur(3px);
-    isolation: isolate;            
+    z-index: 999999;              
+    backdrop-filter: blur(7px);
+    isolation: isolate;           
   }
   .search-modal.open { display: flex; }
   
    
-  .search-modal.open ~ * {
-    pointer-events: none;
-  }
   
-   
   .search-modal-content {
     position: relative;
     width: min(700px, 90vw);
@@ -117,14 +123,13 @@ This week has been crazy. The previous week started with the storming LLaMA rele
     padding: 2rem;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    pointer-events: all;           
+    pointer-events: all;          
   }
   body.dark-theme .search-modal-content {
     background: #2E2E2E;
     color: #D2CEC8;
   }
   
-   
   .pagefind-ui__search-input {
     width: 100% !important;
     padding: 1rem 3rem 1rem 1rem !important;
@@ -138,8 +143,7 @@ This week has been crazy. The previous week started with the storming LLaMA rele
     color: #D2CEC8 !important;
   }
   
-   
-  .pagefind-ui__search-clear {
+  .pagefind-ui__search-clear {  
     position: absolute !important;
     right: 1rem !important;
     top: 50% !important;
@@ -175,14 +179,7 @@ This week has been crazy. The previous week started with the storming LLaMA rele
   }
   </style>
 
-        <button id="theme-toggle" class="button is-rounded padded-button">
-          <i class="fas fa-moon"></i>
-          <span>night</span>
-        </button>
 
-
-      </div>
-    </nav>
     <nav class="nav">
       
       <div class="nav-left"><a class="nav-item" href="https://nezubn.com/">
