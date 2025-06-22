@@ -66,37 +66,31 @@
         
 <div id="search-modal" class="search-modal">
     <div class="search-modal-content" id="pagefind-modal">
-      
       <button id="search-close" class="search-close">&times;</button>
+      
     </div>
   </div>
   
-  
   <script src="https://nezubn.com/pagefind/pagefind-ui.js" defer></script>
-  
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-       
       new PagefindUI({
         element: "#pagefind-modal",
         baseUrl: "\/",
-        resetStyles: true,   
+        resetStyles: true,
         showSubResults: true
       });
   
-      const modal   = document.getElementById('search-modal');
-      const openBtn = document.getElementById('search-toggle');   
-      const closeBtn= document.getElementById('search-close');
-  
-      const open   = () => {
-        modal.classList.add('open');
-        setTimeout(() => modal.querySelector('input')?.focus(), 60); 
+      const M = document.getElementById('search-modal');
+      const open = () => { 
+        M.classList.add('open'); 
+        setTimeout(() => M.querySelector('input')?.focus(), 60); 
       };
-      const close  = () => modal.classList.remove('open');
+      const close = () => M.classList.remove('open');
   
-      openBtn?.addEventListener('click', open);
-      closeBtn?.addEventListener('click', close);
-      modal.addEventListener('click', e => { if (e.target === modal) close(); });
+      document.getElementById('search-toggle')?.addEventListener('click', open);
+      document.getElementById('search-close').addEventListener('click', close);
+      M.addEventListener('click', e => { if (e.target === M) close(); });
       document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     });
   </script>
@@ -104,24 +98,27 @@
   <style>
    
   .search-modal {
-    position: fixed; inset: 0;
-    background: rgba(0,0,0,0.55);
-    display: none;                  
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 10vh;
-    z-index: 9999;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;           
+    justify-content: center;       
+    z-index: 10000;               
+    backdrop-filter: blur(2px);    
   }
   .search-modal.open { display: flex; }
   
    
   .search-modal-content {
     position: relative;
-    width: min(650px, 90%);
+    width: min(700px, 90vw);
+    max-height: 80vh;
     background: var(--body-bg, #fff);
-    border-radius: 12px;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
   }
   body.dark-theme .search-modal-content {
     background: #2E2E2E;
@@ -130,14 +127,78 @@
   
    
   .search-close {
-    position: absolute; top: .5rem; right: .75rem;
-    background: transparent; border: none;
-    font-size: 1.6rem; cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
     color: currentColor;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  .search-close:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  body.dark-theme .search-close:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
   
    
-  .pagefind-ui__search-input { width: 100%; border-radius: 6px; font-size: 1.1rem; }
+  .pagefind-ui__search-input {
+    width: 100% !important;
+    padding: 1rem 3rem 1rem 1rem !important;   
+    border: 2px solid #e0e0e0 !important;
+    border-radius: 12px !important;
+    font-size: 1.2rem !important;
+    background: transparent !important;
+  }
+  body.dark-theme .pagefind-ui__search-input {
+    border-color: #555 !important;
+    color: #D2CEC8 !important;
+  }
+  
+   
+  .pagefind-ui__search-clear {
+    position: absolute !important;
+    right: 1rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    background: transparent !important;
+    border: none !important;
+    font-size: 1.2rem !important;
+    cursor: pointer !important;
+    color: #666 !important;
+    padding: 0.25rem !important;
+    border-radius: 4px !important;
+  }
+  .pagefind-ui__search-clear:hover {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  body.dark-theme .pagefind-ui__search-clear {
+    color: #aaa !important;
+  }
+  body.dark-theme .pagefind-ui__search-clear:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+   
+  .pagefind-ui__results {
+    max-height: 400px !important;
+    overflow-y: auto !important;
+    margin-top: 1rem !important;
+  }
+  
+   
+  .pagefind-ui__form {
+    position: relative !important;
+  }
   </style>
 
 
