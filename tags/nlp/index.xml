@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nlp on ankit sharma</title>
+    <title>nlp on Ankit</title>
     <link>https://nezubn.com/tags/nlp/</link>
-    <description>Recent content in nlp on ankit sharma</description>
+    <description>Recent content in nlp on Ankit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2025</copyright>
     <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/tags/nlp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The AI Summer</title>
@@ -15,7 +15,7 @@
       
       <guid>https://nezubn.com/posts/the-ai-summer/</guid>
       <description>Meta LLaMA, Stanford Alpaca, PaLM, OpenAI GPT-4.
-This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent.</description>
+This week has been crazy. The previous week started with the storming LLaMA release from the Meta which advanced to weight leaks on the torrent. Then Stanford released the Alpaca model fine tuned from the LLaMA 7B model on 52K instruction-following demonstrations.</description>
     </item>
     
   </channel>

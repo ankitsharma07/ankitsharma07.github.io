@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>til on ankit sharma</title>
+    <title>til on Ankit</title>
     <link>https://nezubn.com/categories/til/</link>
-    <description>Recent content in til on ankit sharma</description>
+    <description>Recent content in til on Ankit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2025</copyright>
     <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create new Google Doc from the search bar</title>
@@ -14,7 +14,8 @@
       <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://nezubn.com/posts/gdoc/</guid>
-      <description>TIL, you can create new doc, sheet, slide, form, site or a calendar event from the search bar at the top of the Chrome.</description>
+      <description>TIL, you can create new doc, sheet, slide, form, site or a calendar event from the search bar at the top of the Chrome. This is so convinient if you&amp;rsquo;re a Chrome user.
+Create a new Google Doc: doc.new Create a new Google Sheet: sheet.</description>
     </item>
     
   </channel>

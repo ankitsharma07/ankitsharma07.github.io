@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>algos on ankit sharma</title>
+    <title>algos on Ankit</title>
     <link>https://nezubn.com/tags/algos/</link>
-    <description>Recent content in algos on ankit sharma</description>
+    <description>Recent content in algos on Ankit</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;ankit sharma&lt;/a&gt; 2024</copyright>
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2025</copyright>
     <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/tags/algos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DFS?</title>
@@ -14,7 +14,9 @@
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://nezubn.com/posts/dfs/</guid>
-      <description>I have always struggled with Depth First Search, DFS. I now have started solving it using first principles and it has started to make sense.</description>
+      <description>I have always struggled with Depth First Search, DFS. I now have started solving it using first principles and it has started to make sense.
+DFS can be solved using two methods:
+Recursive solution Iterative solution, using stacks To solve recursively we must keep few things in our mind:</description>
     </item>
     
   </channel>
