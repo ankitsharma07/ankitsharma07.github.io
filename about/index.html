@@ -74,7 +74,7 @@ Hi, I am Ankit aka (nezubn) and I have been working in the field of Machine Lear
       
     </div>
   </div>
-  
+
   <script src="https://nezubn.com/pagefind/pagefind-ui.js" defer></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -84,20 +84,20 @@ Hi, I am Ankit aka (nezubn) and I have been working in the field of Machine Lear
         resetStyles: true,
         showSubResults: true
       });
-  
+
       const M = document.getElementById('search-modal');
-      const open = () => { 
-        M.classList.add('open'); 
-        setTimeout(() => M.querySelector('input')?.focus(), 60); 
+      const open = () => {
+        M.classList.add('open');
+        setTimeout(() => M.querySelector('input')?.focus(), 60);
       };
       const close = () => M.classList.remove('open');
-  
+
       document.getElementById('search-toggle')?.addEventListener('click', open);
       M.addEventListener('click', e => { if (e.target === M) close(); });
       document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
     });
   </script>
-  
+
   <style>
   .search-modal {
     position: fixed;
@@ -107,14 +107,12 @@ Hi, I am Ankit aka (nezubn) and I have been working in the field of Machine Lear
     align-items: flex-start;
     padding-top: 20vh;
     justify-content: center;
-    z-index: 999999;              
+    z-index: 999999;
     backdrop-filter: blur(7px);
-    isolation: isolate;           
+    isolation: isolate;
   }
   .search-modal.open { display: flex; }
-  
-   
-  
+
   .search-modal-content {
     position: relative;
     width: min(700px, 90vw);
@@ -124,13 +122,13 @@ Hi, I am Ankit aka (nezubn) and I have been working in the field of Machine Lear
     padding: 2rem;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    pointer-events: all;          
+    pointer-events: all;
   }
   body.dark-theme .search-modal-content {
     background: #2E2E2E;
     color: #D2CEC8;
   }
-  
+
   .pagefind-ui__search-input {
     width: 100% !important;
     padding: 1rem 3rem 1rem 1rem !important;
@@ -143,8 +141,8 @@ Hi, I am Ankit aka (nezubn) and I have been working in the field of Machine Lear
     border-color: #555 !important;
     color: #D2CEC8 !important;
   }
-  
-  .pagefind-ui__search-clear {  
+
+  .pagefind-ui__search-clear {
     position: absolute !important;
     right: 1rem !important;
     top: 50% !important;
@@ -166,19 +164,168 @@ Hi, I am Ankit aka (nezubn) and I have been working in the field of Machine Lear
   body.dark-theme .pagefind-ui__search-clear:hover {
     background: rgba(255, 255, 255, 0.1) !important;
   }
-  
+
    
   .pagefind-ui__results {
     max-height: 400px !important;
     overflow-y: auto !important;
     margin-top: 1rem !important;
+    padding-right: 0.5rem !important;
   }
-  
+
    
   .pagefind-ui__form {
     position: relative !important;
   }
+
+   
+  .pagefind-ui__result {
+    margin-bottom: 1.5rem !important;
+    padding: 1rem !important;
+    border-radius: 8px !important;
+    border: 1px solid #e0e0e0 !important;
+    background: #fafafa !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .pagefind-ui__result:hover {
+    background: #f0f8ff !important;
+    border-color: #3498db !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15) !important;
+  }
+
+  body.dark-theme .pagefind-ui__result {
+    background: #383838 !important;
+    border-color: #555 !important;
+  }
+
+  body.dark-theme .pagefind-ui__result:hover {
+    background: #404040 !important;
+    border-color: #5dade2 !important;
+    box-shadow: 0 4px 12px rgba(93, 173, 226, 0.25) !important;
+  }
+
+   
+  .pagefind-ui__result-title {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .pagefind-ui__result-link {
+    color: #3498db !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem !important;
+    line-height: 1.3 !important;
+    display: block !important;
+  }
+
+  .pagefind-ui__result-link:hover {
+    color: #2980b9 !important;
+    text-decoration: underline !important;
+  }
+
+  body.dark-theme .pagefind-ui__result-link {
+    color: #5dade2 !important;
+  }
+
+  body.dark-theme .pagefind-ui__result-link:hover {
+    color: #85c1e9 !important;
+  }
+
+   
+  .pagefind-ui__result-excerpt {
+    color: #666 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  body.dark-theme .pagefind-ui__result-excerpt {
+    color: #aaa !important;
+  }
+
+   
+  .pagefind-ui__result-excerpt mark {
+    background: #fff3cd !important;
+    color: #856404 !important;
+    padding: 0.1rem 0.2rem !important;
+    border-radius: 3px !important;
+    font-weight: 600 !important;
+  }
+
+  body.dark-theme .pagefind-ui__result-excerpt mark {
+    background: #3e4b5c !important;
+    color: #85c1e9 !important;
+  }
+
+   
+  .pagefind-ui__result-url {
+    color: #28a745 !important;
+    font-size: 0.8rem !important;
+    text-decoration: none !important;
+    opacity: 0.8 !important;
+  }
+
+  body.dark-theme .pagefind-ui__result-url {
+    color: #6c757d !important;
+  }
+
+   
+  .pagefind-ui__message {
+    text-align: center !important;
+    padding: 2rem !important;
+    color: #666 !important;
+    font-style: italic !important;
+  }
+
+  body.dark-theme .pagefind-ui__message {
+    color: #aaa !important;
+  }
+
+   
+  .pagefind-ui__loading {
+    text-align: center !important;
+    padding: 2rem !important;
+    color: #3498db !important;
+  }
+
+  body.dark-theme .pagefind-ui__loading {
+    color: #5dade2 !important;
+  }
+
+   
+  .pagefind-ui__results::-webkit-scrollbar {
+    width: 6px !important;
+  }
+
+  .pagefind-ui__results::-webkit-scrollbar-track {
+    background: #f1f1f1 !important;
+    border-radius: 3px !important;
+  }
+
+  .pagefind-ui__results::-webkit-scrollbar-thumb {
+    background: #c1c1c1 !important;
+    border-radius: 3px !important;
+  }
+
+  .pagefind-ui__results::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8 !important;
+  }
+
+  body.dark-theme .pagefind-ui__results::-webkit-scrollbar-track {
+    background: #444 !important;
+  }
+
+  body.dark-theme .pagefind-ui__results::-webkit-scrollbar-thumb {
+    background: #666 !important;
+  }
+
+  body.dark-theme .pagefind-ui__results::-webkit-scrollbar-thumb:hover {
+    background: #888 !important;
+  }
   </style>
+
 
 
     <nav class="nav">
