@@ -132,18 +132,21 @@ Dream Setup My Current Setup looks something like this.'>
    
   .pagefind-ui__form {
     position: relative !important;
-    margin-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
+    height: auto !important;
   }
 
    
   .pagefind-ui__search-input {
     width: 100% !important;
+    height: 3.5rem !important;
     padding: 1rem 3rem 1rem 1rem !important;
     border: 2px solid #e0e0e0 !important;
     border-radius: 12px !important;
     font-size: 1.2rem !important;
     background: transparent !important;
     box-sizing: border-box !important;
+    line-height: 1.5rem !important;
   }
   body.dark-theme .pagefind-ui__search-input {
     border-color: #555 !important;
@@ -154,13 +157,13 @@ Dream Setup My Current Setup looks something like this.'>
   .pagefind-ui__search-clear {
     position: absolute !important;
     right: 1rem !important;
-    top: 1rem !important;
-    bottom: 1rem !important;
-    width: 2rem !important;
-    height: auto !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
     background: transparent !important;
     border: none !important;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     cursor: pointer !important;
     color: #666 !important;
     padding: 0 !important;
@@ -168,6 +171,7 @@ Dream Setup My Current Setup looks something like this.'>
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    z-index: 10 !important;
   }
   .pagefind-ui__search-clear:hover {
     background: rgba(0, 0, 0, 0.1) !important;
@@ -185,6 +189,7 @@ Dream Setup My Current Setup looks something like this.'>
     overflow-y: auto !important;
     margin-top: 0 !important;
     padding-right: 0.5rem !important;
+    padding-top: 0 !important;
   }
 
    
