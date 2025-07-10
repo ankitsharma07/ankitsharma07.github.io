@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deep learning on Ankit</title>
+    <link>https://nezubn.com/categories/deep-learning/</link>
+    <description>Recent content in deep learning on Ankit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2025</copyright>
+    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/categories/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Einstein? What Einsum?</title>
+      <link>https://nezubn.com/posts/einsum/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/posts/einsum/</guid>
+      <description>Einstein summation lets us write an algebric expression in index-notation and have numpy/pytorch/jax generate the most effiecient set of tensor operations to compute it.
+The only cons is that it can be confusing and comes with a learning curve. Einsum is backend agnostic tho, i.</description>
+    </item>
+    
+  </channel>
+</rss>
