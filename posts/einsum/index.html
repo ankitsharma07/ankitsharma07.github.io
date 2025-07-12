@@ -483,7 +483,7 @@ The only cons is that it can be confusing and comes with a learning curve. Einsu
     <h2 class="subtitle is-6">July 9, 2025</h2>
     <h1 class="title">What Einstein? What Einsum?</h1>
     <div>
-      2 minutes to read · 314 words
+      4 minutes to read · 799 words
     </div>
     
     <br>
@@ -568,15 +568,201 @@ and those products will be the output
 </span></span><span style="display:flex;"><span>print(x)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij-&gt;ji&#39;</span>, x)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;transpose: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Transpose: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.5600, 0.9810, 0.7717],
 </span></span><span style="display:flex;"><span>         [0.1076, 0.1166, 0.8147]])
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Transpose:  tensor([[0.5600, 0.1076],
+</span></span><span style="display:flex;"><span>Transpose: tensor([[0.5600, 0.1076],
 </span></span><span style="display:flex;"><span>         [0.9810, 0.1166],
 </span></span><span style="display:flex;"><span>         [0.7717, 0.8147]])
 </span></span></code></pre></div><h3 id="summation">Summation</h3>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij-&gt;&#39;</span>, x)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Summation: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.2053, 0.0860, 0.5769],
+</span></span><span style="display:flex;"><span>        [0.8407, 0.0610, 0.0562]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Summation: tensor(1.8262)
+</span></span></code></pre></div><h3 id="column-sum">Column Sum</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij-&gt;j&#39;</span>, x)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Column Sum: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.3466, 0.7609, 0.0815],
+</span></span><span style="display:flex;"><span>        [0.2268, 0.6954, 0.8935]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Column Sum: tensor([0.5734, 1.4562, 0.9750])
+</span></span></code></pre></div><h3 id="row-sum">Row Sum</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij-&gt;i&#39;</span>, x)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Row Sum: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.8775, 0.3120, 0.6106],
+</span></span><span style="display:flex;"><span>        [0.5312, 0.6179, 0.5185]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Row Sum: tensor([1.8001, 1.6676])
+</span></span></code></pre></div><h3 id="matrix-vector-multiplication">Matrix Vector Multiplication</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>v <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(v)
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij, kj -&gt; ik&#39;</span>, x, v)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Matrix Vector Multiplication: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.7960, 0.9741, 0.1856]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tensor([[0.4157, 0.2612, 0.9272],
+</span></span><span style="display:flex;"><span>        [0.8721, 0.3250, 0.4674]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Matrix Vector Multiplication: tensor([[0.7573], [1.0974]])
+</span></span></code></pre></div><h3 id="matrix-matrix-multiplication">Matrix Matrix Multiplication</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij, kj -&gt; ik&#39;</span>, x, x) <span style="color:#75715e"># 2x3 * 3x2 = 2x2</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Matrix Multiplication: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.3680, 0.3761, 0.5536],
+</span></span><span style="display:flex;"><span>        [0.4293, 0.4596, 0.7517]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Matrix Matrix Multiplication: tensor([[0.5834, 0.7470], [0.7470, 0.9605]])
+</span></span></code></pre></div><h3 id="dot-product-first-row-with-first-row-of-matrix">Dot product first row with first row of matrix</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;i, i -&gt; &#39;</span>, x[<span style="color:#ae81ff">0</span>], x[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Dot product of first row: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.2510, 0.1493, 0.2530],
+</span></span><span style="display:flex;"><span>        [0.4679, 0.5010, 0.5318]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Dot product of first row: tensor(0.1493)
+</span></span></code></pre></div><h3 id="dot-product-with-a-matrix">Dot product with a matrix</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij, ij -&gt; &#39;</span>, x, x)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Dot product with a matrix: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.0405, 0.0519, 0.9728],
+</span></span><span style="display:flex;"><span>        [0.0479, 0.2052, 0.3783]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Dot product with matrix: tensor(1.1382)
+</span></span></code></pre></div><h3 id="element-wise-multiplication">Element wise multiplication</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ij, ij -&gt; ij&#39;</span>, x, x)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Element wise multiplication: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.3876, 0.6711, 0.0713],
+</span></span><span style="display:flex;"><span>        [0.3814, 0.8174, 0.8426]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Element wise multiplication: tensor([[0.1502, 0.4503, 0.0051], [0.1455, 0.6681, 0.7100]])
+</span></span></code></pre></div><h3 id="outer-product">Outer Product</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">2</span>))
+</span></span><span style="display:flex;"><span>print(a)
+</span></span><span style="display:flex;"><span>print(b)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;i, j -&gt; ij&#39;</span>, a, b)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Outer Product: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([0.3336, 0.4734, 0.1117])
+</span></span><span style="display:flex;"><span>tensor([0.8645, 0.2134])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Outer Product:
+</span></span><span style="display:flex;"><span>tensor([[0.2884, 0.0712],
+</span></span><span style="display:flex;"><span>        [0.4092, 0.1010],
+</span></span><span style="display:flex;"><span>        [0.0966, 0.0238]])
+</span></span></code></pre></div><h3 id="batch-matrix-multiplication">Batch Matrix Multiplication</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>a <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>))
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(a)
+</span></span><span style="display:flex;"><span>print(b)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ijk, ikl -&gt; ijl&#39;</span>, a, b)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Batch Matrix: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[[0.5067, 0.8090, 0.0088, 0.9936, 0.1828],
+</span></span><span style="display:flex;"><span>         [0.2544, 0.7564, 0.8248, 0.5977, 0.0694]],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        [[0.8260, 0.4089, 0.7738, 0.5748, 0.1143],
+</span></span><span style="display:flex;"><span>         [0.6959, 0.9731, 0.6790, 0.4556, 0.2643]],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        [[0.7593, 0.6693, 0.3735, 0.0406, 0.1825],
+</span></span><span style="display:flex;"><span>         [0.2616, 0.2867, 0.4369, 0.0290, 0.1599]]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tensor([[[0.9256, 0.7068, 0.1455],
+</span></span><span style="display:flex;"><span>         [0.6793, 0.4292, 0.7994],
+</span></span><span style="display:flex;"><span>         [0.9526, 0.5082, 0.0190],
+</span></span><span style="display:flex;"><span>         [0.0798, 0.7878, 0.5322],
+</span></span><span style="display:flex;"><span>         [0.5871, 0.2096, 0.5116]],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        [[0.4090, 0.6878, 0.2609],
+</span></span><span style="display:flex;"><span>         [0.4642, 0.5034, 0.4563],
+</span></span><span style="display:flex;"><span>         [0.8460, 0.1870, 0.3020],
+</span></span><span style="display:flex;"><span>         [0.1418, 0.9659, 0.9026],
+</span></span><span style="display:flex;"><span>         [0.9834, 0.2295, 0.5935]],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        [[0.5233, 0.2923, 0.2487],
+</span></span><span style="display:flex;"><span>         [0.9908, 0.5659, 0.6832],
+</span></span><span style="display:flex;"><span>         [0.5437, 0.0347, 0.1832],
+</span></span><span style="display:flex;"><span>         [0.9032, 0.3923, 0.4762],
+</span></span><span style="display:flex;"><span>         [0.0904, 0.2979, 0.2598]]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Batch Matrix:
+</span></span><span style="display:flex;"><span>tensor([[[1.2136, 1.5310, 1.3428],
+</span></span><span style="display:flex;"><span>         [1.6234, 1.4091, 1.0109]],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        [[1.3762, 1.5001, 1.2225],
+</span></span><span style="display:flex;"><span>         [1.6354, 1.5962, 1.3988]],
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        [[1.3168, 0.6839, 0.7814],
+</span></span><span style="display:flex;"><span>         [0.6992, 0.3129, 0.3964]]])
+</span></span></code></pre></div><h3 id="matrix-diagonal">Matrix Diagonal</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ii -&gt; i&#39;</span>, x)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Diagonal: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.9194, 0.1331, 0.5036],
+</span></span><span style="display:flex;"><span>        [0.2516, 0.6575, 0.7909],
+</span></span><span style="display:flex;"><span>        [0.6403, 0.2983, 0.7398]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Diagonal: tensor([0.9194, 0.6575, 0.7398])
+</span></span></code></pre></div><h3 id="matrix-trace">Matrix Trace</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> torch
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>rand((<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>))
+</span></span><span style="display:flex;"><span>print(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>out <span style="color:#f92672">=</span> torch<span style="color:#f92672">.</span>einsum(<span style="color:#e6db74">&#39;ii -&gt;&#39;</span>, x)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Trace: </span><span style="color:#e6db74">{</span>out<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span>tensor([[0.9849, 0.3388, 0.4579],
+</span></span><span style="display:flex;"><span>        [0.4265, 0.5766, 0.1355],
+</span></span><span style="display:flex;"><span>        [0.4080, 0.5419, 0.5608]])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Trace: tensor(2.1224)
+</span></span></code></pre></div>
       
       <div class="related">
 
