@@ -8,16 +8,13 @@
     <loc>https://nezubn.com/categories/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/categories/deep-learning/</loc>
+    <loc>https://nezubn.com/categories/dl/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nezubn.com/tags/linalg/</loc>
+    <loc>https://nezubn.com/categories/ml/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/posts/</loc>
-    <lastmod>2025-07-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nezubn.com/tags/</loc>
     <lastmod>2025-07-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/posts/einsum/</loc>
@@ -53,6 +50,9 @@
     <loc>https://nezubn.com/posts/dfs/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://nezubn.com/tags/</loc>
+    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nezubn.com/posts/find-research-papers/</loc>
     <lastmod>2024-05-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -68,13 +68,7 @@
     <loc>https://nezubn.com/papershelf/</loc>
     <lastmod>2023-03-24T11:06:57+05:30</lastmod>
   </url><url>
-    <loc>https://nezubn.com/categories/dl/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://nezubn.com/tags/llm/</loc>
-    <lastmod>2023-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nezubn.com/categories/ml/</loc>
     <lastmod>2023-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nezubn.com/tags/nlp/</loc>

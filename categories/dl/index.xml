@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; &lt;a href=&#34;https://nezubn.com&#34;&gt;Ankit Sharma&lt;/a&gt; 2025</copyright>
-    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/categories/dl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Jul 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://nezubn.com/categories/dl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What Einstein? What Einsum?</title>
+      <link>https://nezubn.com/posts/einsum/</link>
+      <pubDate>Wed, 09 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://nezubn.com/posts/einsum/</guid>
+      <description>Einstein summation lets us write an algebric expression in index-notation and have numpy/pytorch/jax generate the most effiecient set of tensor operations to compute it.
+The only cons is that it can be confusing and comes with a learning curve. Einsum is backend agnostic tho, i.</description>
+    </item>
+    
     <item>
       <title>The AI Summer</title>
       <link>https://nezubn.com/posts/the-ai-summer/</link>
